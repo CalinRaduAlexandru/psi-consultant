@@ -47,7 +47,12 @@ nav {
 }
 
 .primary-btn {
-  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 213, 125, 0.9) 0%,
+    rgba(239, 201, 112, 0.9) 100%
+  );
+  color: #776db4;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -55,7 +60,6 @@ nav {
   height: 60px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }

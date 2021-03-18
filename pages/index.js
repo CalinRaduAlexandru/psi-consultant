@@ -48,7 +48,7 @@ export default function Home({ name, text }) {
               </div>
             </h3>
             <div className="primary-btn-wrapper">
-              <PrimaryBtn />
+              <SecondaryBtn />
             </div>
           </div>
           <div className="elena-wrapper">
