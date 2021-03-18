@@ -3,7 +3,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import PrimaryBtn from "../components/Primary-btn";
-import SecondaryBtn from "../components/SecondaryBtn";
 import MenuBar from "../components/MenuBar";
 import Testimony from "../components/Testimony";
 import Carousel from "react-elastic-carousel";
@@ -35,7 +34,7 @@ export default function Home({ name, text }) {
           rel="stylesheet"
         />
       </Head>
-      <div className="home-container">
+      <div className="container">
         <Header title="Psi-consult" />
         <main className="main">
           <MenuBar />
@@ -92,21 +91,6 @@ export default function Home({ name, text }) {
           </Carousel>
         </section>
       </div>
-      <footer>
-        <div className="wave">
-          <img src="/wave.svg" alt="footer wave" />
-        </div>
-        <div className="footer-wrapper">
-          <SecondaryBtn />
-          <div className="links">
-            <a href="">Home </a>
-            <a href="">Elena Chivu </a>
-            <a href="">Servicii </a>
-            <a href="">Practica studenteasca </a>
-            <a href="">Grupuri </a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

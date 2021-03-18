@@ -1,8 +1,10 @@
 const PrimaryBtn = () => {
   return (
-    <div className="secondary-btn">
-      <p>Începe vindecarea</p>
-    </div>
+    <a href="/contact">
+      <div className="secondary-btn">
+        <p>Începe vindecarea</p>
+      </div>
+    </a>
   );
 };
 

@@ -3,25 +3,39 @@ const MenuBar = () => {
     <nav>
       <ul>
         <li>
-          <button>Acasa</button>
+          <a href="/">
+            <button> Acasa</button>
+          </a>
         </li>
         <li>
-          <button>Despre Elena</button>
+          <a href="/despre">
+            <button> Despre Elena</button>
+          </a>
         </li>
         <li>
-          <button>Servicii</button>
+          <a href="/servicii">
+            <button>Servicii</button>
+          </a>
         </li>
         <li>
-          <button>Consiliere prin e-mail</button>
+          <a href="/consiliere-email">
+            <button>Consiliere prin e-mail</button>
+          </a>
         </li>
         <li>
-          <button>Practica studenteasca</button>
+          <a href="/practica">
+            <button>Practica studenteasca</button>
+          </a>
         </li>
         <li>
-          <button>Grupuri</button>
+          <a href="/grupuri">
+            <button>Grupuri</button>
+          </a>
         </li>
         <li>
-          <button>Contact</button>
+          <a href="/contact">
+            <button>Contact</button>
+          </a>
         </li>
       </ul>
     </nav>

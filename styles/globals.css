@@ -41,6 +41,15 @@ a {
   box-shadow: inset 0 0 10px #776db4;
 }
 
+.container {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
   margin-top: -10px;
   margin-right: 100px;
@@ -121,5 +130,5 @@ nav {
 }
 
 .links > a:hover {
-  color: rgba(239, 201, 112, 0.9);
+  color: #776db4;
 }
