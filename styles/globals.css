@@ -1,9 +1,10 @@
 html,
 body {
-  padding: 0;
+  overflow-x: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(155.06deg, #d8c0ff 13.77%, #fbd57d 62.42%);
 }
 
 a {
@@ -13,4 +14,109 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3ddcc, 90 %;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #776db4;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #776db4;
+}
+
+nav {
+  margin-right: 100px;
+}
+
+.primary-btn {
+  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  width: 248px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.primary-btn:hover {
+  transition: 0.1s ease-in-out;
+  filter: brightness(1.05);
+}
+
+.secondary-btn {
+  background: linear-gradient(
+    180deg,
+    rgba(251, 213, 125, 0.9) 0%,
+    rgba(239, 201, 112, 0.9) 100%
+  );
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  width: 248px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.secondary-btn:hover {
+  transition: 0.1s ease-in-out;
+  filter: brightness(1.05);
+}
+
+.wave {
+  margin-top: -250px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  margin-top: -20px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+}
+
+.links {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.links > a {
+  margin: 0 25px 15px 0;
+}
+
+.links > a:hover {
+  color: rgba(239, 201, 112, 0.9);
 }

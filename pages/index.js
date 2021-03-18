@@ -1,65 +1,112 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Header from "../components/header";
+import PrimaryBtn from "../components/Primary-btn";
+import SecondaryBtn from "../components/SecondaryBtn";
+import MenuBar from "../components/MenuBar";
+import Testimony from "../components/Testimony";
+import Carousel from "react-elastic-carousel";
+import { Testimonials } from "../components/Testimonials-data";
 
-export default function Home() {
+export default function Home({ name, text }) {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 500, itemsToShow: 2 },
+    { width: 700, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Psi-consultant</title>
+        <link rel="icon" href="/logo.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="home-container">
+        <Header title="Bine ai venit!" />
+        <main className="main">
+          <MenuBar />
+          <div className="main-title">
+            <h3>
+              Depășim împreună toate blocajele pentru a înflori spre adevarătul
+              tău potențial.
+              <div className="underline">
+                <img src="/underline.svg" alt="underline" width="200px" />
+              </div>
+            </h3>
+            <div className="primary-btn-wrapper">
+              <PrimaryBtn />
+            </div>
+          </div>
+          <div className="elena-wrapper">
+            <img
+              src="/Elena.png"
+              alt="Picture of the author"
+              width="300"
+              height="auto"
+            />
+            <div className="psiholog-elena">
+              <p>Psiholog Elena Chivu </p>
+            </div>
+          </div>
+        </main>
+        <img
+          src="/Shelves.svg"
+          alt="rafturi terapie"
+          width="700px"
+          height="auto"
+          style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+        />
+        <div className="line-wrap">
+          <img
+            src="/line.svg"
+            alt="fir intortocheat devine deznodat de la psiholog la client"
+            width="370px"
+            height="auto"
+            style={{ transform: `translateY(${offsetY * -0.06}px)` }}
+          />
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <img src="/Characters.svg" alt="therapy" width="500px" height="auto" />
+        <section className="section-testimony">
+          <Carousel breakPoints={breakPoints}>
+            {Testimonials.map((testimony) => (
+              <Testimony
+                key={testimony.id}
+                name={testimony.name}
+                text={testimony.text}
+              />
+            ))}
+          </Carousel>
+        </section>
+      </div>
+      <footer>
+        <div className="wave">
+          <img src="/wave.svg" alt="footer wave" />
+        </div>
+        <div className="footer-wrapper">
+          <SecondaryBtn />
+          <div className="links">
+            <a href="">Home </a>
+            <a href="">Elena Chivu </a>
+            <a href="">Servicii </a>
+            <a href="">Practica studenteasca </a>
+            <a href="">Grupuri </a>
+          </div>
+        </div>
       </footer>
     </div>
-  )
+  );
 }
