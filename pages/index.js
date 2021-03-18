@@ -36,11 +36,11 @@ export default function Home({ name, text }) {
         />
       </Head>
       <div className="home-container">
-        <Header title="Bine ai venit!" />
+        <Header title="Psi-consult" />
         <main className="main">
           <MenuBar />
-          <div className="main-title">
-            <h3>
+          <div className="main-title-container">
+            <h3 className="main-title">
               Depășim împreună toate blocajele pentru a înflori spre adevarătul
               tău potențial.
               <div className="underline">

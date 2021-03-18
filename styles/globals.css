@@ -42,6 +42,7 @@ a {
 }
 
 nav {
+  margin-top: -10px;
   margin-right: 100px;
 }
 
@@ -65,12 +66,14 @@ nav {
 }
 
 .secondary-btn {
+  background: rgb(241, 239, 242);
   background: linear-gradient(
     180deg,
-    rgba(251, 213, 125, 0.9) 0%,
-    rgba(239, 201, 112, 0.9) 100%
+    rgba(241, 239, 242, 1) 0%,
+    rgba(243, 241, 244, 1) 100%
   );
   border-radius: 50px;
+  color: #776db4;
   display: flex;
   justify-content: center;
   width: 248px;
