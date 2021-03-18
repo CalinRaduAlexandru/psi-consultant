@@ -15,7 +15,7 @@ const MenuBar = () => {
           <button>Consiliere prin e-mail</button>
         </li>
         <li>
-          <button>Practică studențească</button>
+          <button>Practica studenteasca</button>
         </li>
         <li>
           <button>Grupuri</button>

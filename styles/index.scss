@@ -43,7 +43,7 @@
     padding: 10px 5px;
     border-radius: 25px;
     cursor: pointer;
-    color: #fff;
+    color: #776db4;
     font-weight: 900;
     font-size: 18px;
     letter-spacing: 1px;
@@ -52,6 +52,12 @@
     border: none;
     transition: 0.1s ease-in-out;
     background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+    background: rgb(241, 239, 242);
+    background: linear-gradient(
+      180deg,
+      rgba(241, 239, 242, 1) 0%,
+      rgba(243, 241, 244, 1) 100%
+    );
 
     &:hover {
       transition: 0.1s ease-in-out;
