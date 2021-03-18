@@ -6,7 +6,7 @@ const MenuBar = () => {
           <button>Acasa</button>
         </li>
         <li>
-          <button>Desppre Elena</button>
+          <button>Despre Elena</button>
         </li>
         <li>
           <button>Servicii</button>

@@ -31,7 +31,7 @@ export default function Home({ name, text }) {
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,900&display=swap"
           rel="stylesheet"
         />
       </Head>

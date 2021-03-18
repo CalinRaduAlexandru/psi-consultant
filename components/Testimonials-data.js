@@ -21,12 +21,12 @@ export const Testimonials = [
     id: 4,
     name: "Maria Anghel",
     text:
-      "un terapeut foarte bun din punct de vedere profesional si un om plin de intelegere fata de diversele experientele de viata",
+      "Un terapeut foarte bun din punct de vedere profesional si un om plin de intelegere fata de diversele experientele de viata",
   },
   {
     id: 5,
     name: "Berar Olga",
-    text: "fermitate si sensibilitate, comunicare plina de sens",
+    text: "Fermitate si sensibilitate, comunicare plina de sens",
   },
   {
     id: 6,
@@ -35,8 +35,8 @@ export const Testimonials = [
   },
   {
     id: 7,
-    name: "anonim",
+    name: "Anonim",
     text:
-      "Cum este acest psiholog? Diferet de ce cunosteam eu: ,,bogat, dar modest, destept, dar plin de compasiune, experimentat, dar curios, profesionist, dar creativ, intelept, dar plin de umor, serios, dar gratios, puternic, dar sensibil",
+      "Cum este acest psiholog? Diferit de ce cunosteam eu: bogat, dar modest, destept, dar plin de compasiune, experimentat, dar curios, profesionist, dar creativ, intelept, dar plin de umor, serios, dar gratios, puternic, dar sensibil",
   },
 ];
