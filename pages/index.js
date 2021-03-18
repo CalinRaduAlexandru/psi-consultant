@@ -27,7 +27,7 @@ export default function Home({ name, text }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Psi-consultant</title>
+        <title>Psi-consult</title>
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
