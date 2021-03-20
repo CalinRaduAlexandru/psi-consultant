@@ -4,7 +4,12 @@ body {
   margin: 0;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(155.06deg, #d8c0ff 13.77%, #fbd57d 62.42%);
+  background: rgb(182, 162, 215);
+  background: linear-gradient(
+    180deg,
+    rgba(182, 162, 215, 1) 0%,
+    rgba(238, 232, 242, 1) 100%
+  );
 }
 
 a {
@@ -51,12 +56,17 @@ a {
 }
 
 nav {
-  margin-top: -10px;
-  margin-right: 100px;
+  margin-top: -16px;
+  margin-right: 50px;
 }
 
 .primary-btn {
-  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
+  background: rgb(119, 106, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 106, 195, 1) 0%,
+    rgba(81, 71, 143, 1) 100%
+  );
   color: #fff;
   border-radius: 50px;
   display: flex;
@@ -71,7 +81,7 @@ nav {
 
 .primary-btn:hover {
   transition: 0.1s ease-in-out;
-  filter: brightness(1.05);
+  filter: brightness(1.15);
 }
 
 .secondary-btn {
@@ -81,7 +91,7 @@ nav {
     rgba(241, 239, 242, 1) 0%,
     rgba(243, 241, 244, 1) 100%
   );
-  color: #776db4;
+  color: #51478f;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -131,4 +141,20 @@ nav {
 
 .links > a:hover {
   color: #776db4;
+}
+
+.lgksPe {
+  background: #776db4 !important;
+}
+
+.lgksPe:hover {
+  background: #776db4 !important;
+}
+
+.lgksPe:visited {
+  background: #776db4 !important;
+}
+
+.lgksPe:active {
+  background: #776db4 !important;
 }

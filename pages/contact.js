@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../components/header";
 import MenuBar from "../components/MenuBar";
 
-const despre = () => {
+const Contact = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Head>
@@ -19,10 +26,47 @@ const despre = () => {
         <Header title="Contact" />
         <main className="main">
           <MenuBar />
+          <div className="desk-lady-wrap">
+            <div>
+              <img
+                src="/desk-lady-painting.svg"
+                alt="Picture of the author"
+                height="auto"
+                width="80px"
+                style={{
+                  transform: `translateY(${offsetY * 0.366}px)`,
+                  zIndex: "2",
+                }}
+              />
+              <img
+                src="/desk-lady-clock.svg"
+                alt="Picture of the author"
+                height="auto"
+                width="50px"
+                style={{
+                  transform: `translateY(${offsetY * 0.31}px)`,
+                  marginLeft: "20px",
+                  zIndex: "3",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src="/desk-lady.svg"
+                alt="Picture of the author"
+                width="200"
+                height="auto"
+                style={{
+                  transform: `translateY(${offsetY * 0.33}px)`,
+                  zIndex: "1",
+                }}
+              />
+            </div>
+          </div>
         </main>
       </div>
     </>
   );
 };
 
-export default despre;
+export default Contact;

@@ -25,29 +25,33 @@ const despre = () => {
       <div className="container">
         <Header title="Despre Elena Chivu" />
         <main className="main">
-          <MenuBar />
-          <div className="rectangle-wrapper">
-            <div className="first-row">
-              <div className="elena-bgrmv-wrapper">
-                <img
-                  src="/ElenaBgRmv.png"
-                  alt="Picture of the author"
-                  width="200"
-                  height="auto"
-                />
-                <h3>Psiholog Elena Chivu</h3>
-                <h4>Atestare profesională: PSIHOLOGIE CLINICA</h4>
-              </div>
+          <div className="left-side">
+            <MenuBar />
+            <div className="resume-wrapper">
               <img
                 src="/Resume-amico.svg"
                 alt="Picture of the author"
                 width="325px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.18}px)`,
+                  transform: `translateY(${offsetY * 0.37}px)`,
                 }}
               />
             </div>
+          </div>
+          <div className="rectangle-wrapper">
+            <div className="elena-bgrmv-wrapper">
+              <img
+                src="/photoMockup.png"
+                alt="Picture of the author"
+                width="200"
+                height="auto"
+                style={{ borderRadius: "25px" }}
+              />
+              <h3>Psiholog Elena Chivu</h3>
+              <h4>Atestare profesională: PSIHOLOGIE CLINICA</h4>
+            </div>
+
             <h1>Pregătire Academică:</h1>
             <p>
               Doctorand - Universitatea de Stat Moldova <br />
@@ -91,43 +95,6 @@ const despre = () => {
               depresie în noul mileniu
               <br />
             </p>
-          </div>
-          <div className="desk-lady-wrap">
-            <div>
-              <img
-                src="/desk-lady-painting.svg"
-                alt="Picture of the author"
-                height="auto"
-                width="80px"
-                style={{
-                  transform: `translateY(${offsetY * 0.366}px)`,
-                  zIndex: "2",
-                }}
-              />
-              <img
-                src="/desk-lady-clock.svg"
-                alt="Picture of the author"
-                height="auto"
-                width="50px"
-                style={{
-                  transform: `translateY(${offsetY * 0.31}px)`,
-                  marginLeft: "20px",
-                  zIndex: "3",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src="/desk-lady.svg"
-                alt="Picture of the author"
-                width="200"
-                height="auto"
-                style={{
-                  transform: `translateY(${offsetY * 0.33}px)`,
-                  zIndex: "1",
-                }}
-              />
-            </div>
           </div>
         </main>
       </div>

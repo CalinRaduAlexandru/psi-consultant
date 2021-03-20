@@ -3,7 +3,7 @@ const Header = ({ title }) => {
     <header className="header">
       <div className="left-header">
         <div className="logo">
-          <img src="/logo.png" alt="logo" />
+          <img src="/autism.svg" alt="logo" width="75px" height="auto" />
         </div>
         <h3>
           Cabinet individual

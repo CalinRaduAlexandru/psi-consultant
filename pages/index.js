@@ -39,26 +39,29 @@ export default function Home({ name, text }) {
         <main className="main">
           <MenuBar />
           <div className="main-title-container">
-            <h3 className="main-title">
-              Depășim împreună toate blocajele pentru a înflori spre adevarătul
-              tău potențial.
-              <div className="underline">
-                <img src="/underline.svg" alt="underline" width="200px" />
+            <div className="main-title">
+              <h3>
+                Depășim împreună toate blocajele pentru a înflori spre
+                adevarătul tău potențial.
+                <div className="underline">
+                  <img src="/underline.svg" alt="underline" width="200px" />
+                </div>
+              </h3>
+              <div className="primary-btn-wrapper">
+                <PrimaryBtn />
               </div>
-            </h3>
-            <div className="primary-btn-wrapper">
-              <PrimaryBtn />
             </div>
-          </div>
-          <div className="elena-wrapper">
-            <img
-              src="/Elena.png"
-              alt="Picture of the author"
-              width="300"
-              height="auto"
-            />
-            <div className="psiholog-elena">
-              <p>Psiholog Elena Chivu </p>
+
+            <div className="elena-wrapper">
+              <img
+                src="/photoMockup.png"
+                alt="Picture of the author"
+                width="300"
+                height="auto"
+              />
+              <div className="psiholog-elena">
+                <p>Psiholog Elena Chivu </p>
+              </div>
             </div>
           </div>
         </main>
