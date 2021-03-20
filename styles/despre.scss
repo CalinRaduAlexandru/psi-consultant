@@ -2,16 +2,33 @@
   align-items: flex-start;
 
   .resume-wrapper {
-    margin-top: -10px;
-    margin-left: -10px;
+    margin-top: 40px;
+    margin-left: -20px;
+    position: relative;
+
+    .talk-bubble {
+      position: absolute;
+      top: 15%;
+      right: 29%;
+      animation: rise 1s alternate infinite;
+      z-index: 3;
+    }
+
+    .hat {
+      position: absolute;
+      top: -6%;
+      left: 17%;
+      animation: rise 1s alternate infinite;
+      z-index: 2;
+    }
   }
 }
 
 .rectangle-wrapper {
   position: relative;
-  padding: 20px 20px 20px 20px;
+  padding: 40px;
   width: 100%;
-  margin-bottom: 200px;
+  max-width: 1000px;
   background: rgb(241, 239, 242);
   background: linear-gradient(
     180deg,
@@ -20,6 +37,7 @@
   );
   border-radius: 15px;
   opacity: 0.9;
+  margin-bottom: -20px;
 
   .elena-bgrmv-wrapper {
     display: flex;
@@ -46,10 +64,12 @@
   }
 }
 
-.desk-lady-wrap {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: -190px;
-  left: 110px;
+@keyframes rise {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 7.5px;
+  }
 }

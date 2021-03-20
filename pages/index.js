@@ -35,7 +35,7 @@ export default function Home({ name, text }) {
         />
       </Head>
       <div className="container">
-        <Header title="Psi-consult" />
+        <Header title="Consultanță de psihoterapie" />
         <main className="main">
           <MenuBar />
           <div className="main-title-container">
@@ -54,9 +54,9 @@ export default function Home({ name, text }) {
 
             <div className="elena-wrapper">
               <img
-                src="/photoMockup.png"
+                src="/profileMockup.png"
                 alt="Picture of the author"
-                width="300"
+                width="285"
                 height="auto"
               />
               <div className="psiholog-elena">

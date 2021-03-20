@@ -28,13 +28,35 @@ const despre = () => {
           <div className="left-side">
             <MenuBar />
             <div className="resume-wrapper">
+              <div className="hat">
+                <img
+                  src="/ResumeHat.svg"
+                  alt="Picture of the author"
+                  width="95px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.42}px)`,
+                  }}
+                />
+              </div>
+              <div className="talk-bubble">
+                <img
+                  src="/ResumeTalkbubble.svg"
+                  alt="Picture of the author"
+                  width="55px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.42}px)`,
+                  }}
+                />
+              </div>
               <img
-                src="/Resume-amico.svg"
+                src="/resumePeople.svg"
                 alt="Picture of the author"
                 width="325px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.37}px)`,
+                  transform: `translateY(${offsetY * 0.42}px)`,
                 }}
               />
             </div>

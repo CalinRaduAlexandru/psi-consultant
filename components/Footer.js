@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="wave">
-        <img src="/wave.svg" alt="footer wave" />
+        <img src="/wave.svg" alt="footer wave" width="100%" />
       </div>
       <div className="footer-wrapper">
         <SecondaryBtn />

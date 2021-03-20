@@ -22,6 +22,27 @@
   }
 
   .logo {
-    margin-right: 10px;
+    margin-right: 20px;
+    position: relative;
+
+    .shape {
+      position: absolute;
+      top: 12px;
+      right: 3px;
+      animation: fit 1s alternate infinite;
+    }
+  }
+}
+
+@keyframes fit {
+  from {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  to {
+    margin-top: -5px;
+    margin-right: -5px;
+    transform: scale(1.16);
   }
 }
