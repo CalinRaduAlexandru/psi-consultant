@@ -3,7 +3,7 @@ const Header = ({ title }) => {
     <header className="header">
       <div className="left-header">
         <div className="logo">
-          <img src="/LogoTest.svg" alt="logo" width="75px" height="auto" />
+          <img src="/logoTest.svg" alt="logo" width="75px" height="auto" />
           <div className="shape">
             <img
               src="/LogoTestShape.svg"
