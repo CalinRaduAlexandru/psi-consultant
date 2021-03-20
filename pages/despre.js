@@ -35,7 +35,7 @@ const despre = () => {
                   width="95px"
                   height="auto"
                   style={{
-                    transform: `translateY(${offsetY * 0.42}px)`,
+                    transform: `translateY(${offsetY * 0.32}px)`,
                   }}
                 />
               </div>
@@ -46,7 +46,7 @@ const despre = () => {
                   width="55px"
                   height="auto"
                   style={{
-                    transform: `translateY(${offsetY * 0.42}px)`,
+                    transform: `translateY(${offsetY * 0.32}px)`,
                   }}
                 />
               </div>
@@ -56,7 +56,7 @@ const despre = () => {
                 width="325px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.42}px)`,
+                  transform: `translateY(${offsetY * 0.32}px)`,
                 }}
               />
             </div>
