@@ -30,7 +30,7 @@ const despre = () => {
             <div className="resume-wrapper">
               <div className="hat">
                 <img
-                  src="/ResumeHat.svg"
+                  src="/resumeHat.svg"
                   alt="Picture of the author"
                   width="95px"
                   height="auto"
@@ -41,7 +41,7 @@ const despre = () => {
               </div>
               <div className="talk-bubble">
                 <img
-                  src="/ResumeTalkbubble.svg"
+                  src="/resumeTalkbubble.svg"
                   alt="Picture of the author"
                   width="55px"
                   height="auto"

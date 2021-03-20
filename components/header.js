@@ -3,10 +3,10 @@ const Header = ({ title }) => {
     <header className="header">
       <div className="left-header">
         <div className="logo">
-          <img src="/logoTest.svg" alt="logo" width="75px" height="auto" />
+          <img src="/LogoTest.svg" alt="logo" width="75px" height="auto" />
           <div className="shape">
             <img
-              src="/logoTestShape.svg"
+              src="/LogoTestShape.svg"
               alt="logo"
               width="22px"
               height="auto"
