@@ -144,18 +144,14 @@ nav {
   color: #776db4;
 }
 
-.lgksPe {
-  background: #776db4 !important;
+.rec-arrow {
+  color: #000 !important;
 }
 
-.lgksPe:hover {
-  background: #776db4 !important;
+.rec-arrow:hover {
+  background: #776db4;
 }
 
-.lgksPe:visited {
-  background: #776db4 !important;
-}
-
-.lgksPe:active {
-  background: #776db4 !important;
+.rec-arrow:disabled {
+  background: lightgrey;
 }
