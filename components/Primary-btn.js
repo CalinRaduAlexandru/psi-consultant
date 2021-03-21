@@ -1,8 +1,8 @@
-const PrimaryBtn = () => {
+const PrimaryBtn = ({ text }) => {
   return (
     <a href="/contact">
       <div className="primary-btn">
-        <p>Începe vindecarea</p>
+        <p>{text}</p>
       </div>
     </a>
   );

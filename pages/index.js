@@ -27,7 +27,7 @@ export default function Home({ name, text }) {
     <div className={styles.container}>
       <Head>
         <title>Psi-consult</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/Logo.svg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,900&display=swap"
@@ -48,7 +48,7 @@ export default function Home({ name, text }) {
                 </div>
               </h3>
               <div className="primary-btn-wrapper">
-                <PrimaryBtn />
+                <PrimaryBtn text="Începe creșterea" />
               </div>
             </div>
 

@@ -106,7 +106,7 @@ nav {
 
 .secondary-btn:hover {
   transition: 0.1s ease-in-out;
-  filter: brightness(1.05);
+  filter: brightness(1.15);
 }
 
 .wave {
