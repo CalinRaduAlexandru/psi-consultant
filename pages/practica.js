@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../components/header";
 import MenuBar from "../components/MenuBar";
 
-const despre = () => {
+const PracticaStudenteasca = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <Head>
@@ -16,13 +22,59 @@ const despre = () => {
         />
       </Head>
       <div className="container">
-        <Header title="Practica studenteasca" />
+        <Header title="Practică studențească" />
         <main className="main">
-          <MenuBar />
+          <div className="left-side">
+            <MenuBar />
+            <div className="resume-wrapper">
+              <div className="hat">
+                <img
+                  src="/resumeHat.svg"
+                  alt="Picture of the author"
+                  width="95px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.32}px)`,
+                  }}
+                />
+              </div>
+              <div className="talk-bubble">
+                <img
+                  src="/resumeTalkbubble.svg"
+                  alt="Picture of the author"
+                  width="55px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.32}px)`,
+                  }}
+                />
+              </div>
+              <img
+                src="/resumePeopleGreen.svg"
+                alt="Picture of the author"
+                width="325px"
+                height="auto"
+                style={{
+                  transform: `translateY(${offsetY * 0.32}px)`,
+                }}
+              />
+            </div>
+          </div>
+          <div className="rectangle-wrapper">
+            <div className="elena-bgrmv-wrapper">
+              <img
+                src="/photoMockup.png"
+                alt="Picture of the author"
+                width="200"
+                height="auto"
+                style={{ borderRadius: "25px" }}
+              />
+            </div>
+          </div>
         </main>
       </div>
     </>
   );
 };
 
-export default despre;
+export default PracticaStudenteasca;

@@ -1,9 +1,18 @@
+@import "./global.scss";
+
 .header {
-  width: 100%;
+  width: 100vw;
+  padding: 0 60px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #eee8f2;
+  color: #f7eef9;
+  color: $Regular;
+  background: linear-gradient(180deg, #ae81b5 0%, #ca8ed4 100%);
+  background: $gradientLight;
+  background: linear-gradient(180deg, #f1d3f5 0%, #edc0f4 100%);
+  background: $gradientHeader;
 
   .header h1,
   h3 {
@@ -12,7 +21,8 @@
 
   .header-title {
     font-size: 12px;
-    color: #4b4187;
+    color: #fff;
+    color: $Regular;
   }
 
   .left-header {
@@ -23,12 +33,13 @@
 
   .logo {
     margin-right: 20px;
+    margin-top: 8px;
     position: relative;
 
     .shape {
       position: absolute;
-      top: 12px;
-      right: 3px;
+      top: 12.28px;
+      right: 11px;
       animation: fit 2s alternate infinite;
     }
   }

@@ -1,0 +1,18 @@
+@import "./global.scss";
+
+.pageSlide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $Dark;
+  width: 250px;
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  p {
+    cursor: pointer;
+  }
+}

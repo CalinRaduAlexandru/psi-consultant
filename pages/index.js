@@ -68,9 +68,12 @@ export default function Home({ name, text }) {
         <img
           src="/Shelves.svg"
           alt="rafturi terapie"
-          width="700px"
+          width="800px"
           height="auto"
-          style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+          style={{
+            transform: `translateY(${offsetY * 0.1}px)`,
+            marginRight: "10px",
+          }}
         />
         <div className="line-wrap">
           <img
@@ -78,10 +81,18 @@ export default function Home({ name, text }) {
             alt="fir intortocheat devine deznodat de la psiholog la client"
             width="370px"
             height="auto"
-            style={{ transform: `translateY(${offsetY * -0.06}px)` }}
+            style={{
+              transform: `translateY(${offsetY * -0.06}px)`,
+              marginLeft: "5px",
+            }}
           />
         </div>
-        <img src="/Characters.svg" alt="therapy" width="500px" height="auto" />
+        <img
+          src="/PsiCharacters.svg"
+          alt="therapy"
+          width="500px"
+          height="auto"
+        />
         <section className="section-testimony">
           <Carousel breakPoints={breakPoints}>
             {Testimonials.map((testimony) => (

@@ -32,10 +32,10 @@ const despre = () => {
                 <img
                   src="/resumeHat.svg"
                   alt="Picture of the author"
-                  width="95px"
+                  width="75px"
                   height="auto"
                   style={{
-                    transform: `translateY(${offsetY * 0.32}px)`,
+                    transform: `translateY(${offsetY * 0.13}px)`,
                   }}
                 />
               </div>
@@ -43,37 +43,38 @@ const despre = () => {
                 <img
                   src="/resumeTalkbubble.svg"
                   alt="Picture of the author"
-                  width="55px"
+                  width="45px"
                   height="auto"
                   style={{
-                    transform: `translateY(${offsetY * 0.32}px)`,
+                    transform: `translateY(${offsetY * 0.14}px)`,
                   }}
                 />
               </div>
               <img
-                src="/resumePeople.svg"
+                src="/resumePeopleGreen.svg"
                 alt="Picture of the author"
-                width="325px"
+                width="260px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.32}px)`,
+                  transform: `translateY(${offsetY * 0.15}px)`,
                 }}
               />
             </div>
           </div>
+
           <div className="rectangle-wrapper">
             <div className="elena-bgrmv-wrapper">
               <img
                 src="/photoMockup.png"
                 alt="Picture of the author"
-                width="200"
+                width="150"
                 height="auto"
                 style={{ borderRadius: "25px" }}
               />
               <h3>Psiholog Elena Chivu</h3>
-              <h4>Atestare profesională: PSIHOLOGIE CLINICA</h4>
             </div>
 
+            <h4>Atestare profesională: PSIHOLOGIE CLINICA</h4>
             <h1>Pregătire Academică:</h1>
             <p>
               Doctorand - Universitatea de Stat Moldova <br />

@@ -1,9 +1,11 @@
+@import "./global.scss";
+
 .main {
-  margin: 75px 0;
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  margin-bottom: 75px;
 
   .main-title-container {
     display: flex;
@@ -11,22 +13,17 @@
     font-size: 28px;
     cursor: default;
     position: relative;
-    background: rgb(241, 239, 242);
-    background: linear-gradient(
-      180deg,
-      rgba(241, 239, 242, 1) 0%,
-      rgba(243, 241, 244, 1) 100%
-    );
+    background: $gradientLight;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     opacity: 0.9;
     padding: 25px 25px 25px 45px;
-    height: 390px;
+    height: 360px;
 
     .main-title {
-      margin-top: -5px;
+      margin-top: -35px;
       flex-direction: column;
-      color: #776db4;
+      color: $Regular;
       width: 550px;
     }
 
@@ -42,61 +39,29 @@
     .elena-wrapper {
       position: relative;
       cursor: default;
+      padding: 0 0 30px 0;
     }
     .psiholog-elena {
       position: absolute;
-      background: #776db4;
+      background: $gradientHeader;
       border-top-left-radius: 25px;
       border-bottom-right-radius: 15px;
-      padding: 0px 15px 8px 35px;
+      padding: 0px 15px 8px 90px;
       height: 50px;
-      bottom: 10px;
-      left: 25px;
-      color: #eee8f2;
+      bottom: 40px;
+      left: -34px;
+      color: $Dark;
+      font-weight: 600;
       font-size: 16px;
-      width: 100%;
+      width: 345px;
+      filter: brightness(0.92);
     }
-  }
-}
-
-li {
-  margin-bottom: 10px;
-  list-style-type: none;
-  margin-left: -40px;
-}
-button {
-  padding: 10px 5px;
-  border-radius: 15px;
-  cursor: pointer;
-  color: #4b4187;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  line-height: 27px;
-  width: 300px;
-  border: none;
-  transition: 0.1s ease-in-out;
-  background: linear-gradient(180deg, #cdacf1 0%, #b494d6 100%);
-  background: rgb(241, 239, 242);
-  background: linear-gradient(
-    180deg,
-    rgba(241, 239, 242, 1) 0%,
-    rgba(243, 241, 244, 1) 100%
-  );
-
-  &:hover {
-    transition: 0.1s ease-in-out;
-    filter: brightness(1.05);
-  }
-  &:focus {
-    outline: #776db4 auto 5px;
-    outline-style: none;
   }
 }
 
 .line-wrap {
   animation: swing 1s alternate infinite;
-  margin-bottom: -10px;
+  margin-bottom: -20px;
 }
 
 .section-testimony {

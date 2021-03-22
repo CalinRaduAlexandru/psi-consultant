@@ -10,7 +10,6 @@ const Contact = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <>
       <Head>
@@ -25,41 +24,50 @@ const Contact = () => {
       <div className="container">
         <Header title="Contact" />
         <main className="main">
-          <MenuBar />
-          <div className="desk-lady-wrap">
-            <div>
+          <div className="left-side">
+            <MenuBar />
+            <div className="resume-wrapper">
+              <div className="hat">
+                <img
+                  src="/resumeHat.svg"
+                  alt="Picture of the author"
+                  width="95px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.32}px)`,
+                  }}
+                />
+              </div>
+              <div className="talk-bubble">
+                <img
+                  src="/resumeTalkbubble.svg"
+                  alt="Picture of the author"
+                  width="55px"
+                  height="auto"
+                  style={{
+                    transform: `translateY(${offsetY * 0.32}px)`,
+                  }}
+                />
+              </div>
               <img
-                src="/desk-lady-painting.svg"
+                src="/resumePeopleGreen.svg"
                 alt="Picture of the author"
+                width="325px"
                 height="auto"
-                width="80px"
                 style={{
-                  transform: `translateY(${offsetY * 0.366}px)`,
-                  zIndex: "2",
-                }}
-              />
-              <img
-                src="/desk-lady-clock.svg"
-                alt="Picture of the author"
-                height="auto"
-                width="50px"
-                style={{
-                  transform: `translateY(${offsetY * 0.31}px)`,
-                  marginLeft: "20px",
-                  zIndex: "3",
+                  transform: `translateY(${offsetY * 0.32}px)`,
                 }}
               />
             </div>
-            <div>
+          </div>
+          <div className="rectangle-wrapper">
+            <div className="elena-bgrmv-wrapper">
               <img
-                src="/desk-lady.svg"
+                src="/photoMockup.png"
                 alt="Picture of the author"
                 width="200"
                 height="auto"
-                style={{
-                  transform: `translateY(${offsetY * 0.33}px)`,
-                  zIndex: "1",
-                }}
+                style={{ borderRadius: "25px" }}
               />
             </div>
           </div>

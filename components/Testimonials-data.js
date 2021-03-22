@@ -37,6 +37,6 @@ export const Testimonials = [
     id: 7,
     name: "Anonim",
     text:
-      "Cum este acest psiholog? Diferit de ce cunosteam eu: bogat, dar modest, destept, dar plin de compasiune, experimentat, dar curios, profesionist, dar creativ, intelept, dar plin de umor, serios, dar gratios, puternic, dar sensibil",
+      "Cum este acest psiholog? Bogat, dar modest, destept, dar plin de compasiune, experimentat, dar curios, profesionist, dar creativ, intelept, dar plin de umor, serios, dar gratios, puternic, dar sensibil",
   },
 ];
