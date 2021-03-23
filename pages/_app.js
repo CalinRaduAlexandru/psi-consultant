@@ -3,6 +3,7 @@ import "./../styles/index.scss";
 import "./../styles/despre.scss";
 import "./../styles/grupuri.scss";
 import "./../styles/consiliere.scss";
+import "./../styles/contact.scss";
 
 import "./../styles/infoCard.scss";
 import "./../styles/faqs.scss";

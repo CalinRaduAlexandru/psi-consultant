@@ -15,6 +15,7 @@ $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
 
 $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
 $gradientPinkThree: linear-gradient(143.94deg, #da8be9 19.55%, #9c33b0 86.14%);
+$PrimaryBtnGradient: linear-gradient(180deg, #b55bc6 0%, #5a0f68 100%);
 
 html,
 body {
@@ -32,6 +33,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
 }
 
 .rectangles ul {
@@ -117,7 +122,7 @@ nav {
 }
 
 .primary-btn {
-  background: linear-gradient(180deg, #b55bc6 0%, #5a0f68 100%);
+  background: $PrimaryBtnGradient;
   color: #fff;
   border-radius: 50px;
   display: flex;
@@ -189,7 +194,7 @@ nav {
 }
 
 .links > a:hover {
-  color: $Regular !important;
+  color: $Dark !important;
 }
 
 .rec-arrow {

@@ -81,7 +81,7 @@ const PracticaStudenteasca = () => {
                 width="260px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.2}px)`,
+                  transform: `translateY(${offsetY * 0.3}px)`,
                 }}
               />
             </div>

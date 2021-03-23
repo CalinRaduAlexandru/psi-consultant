@@ -38,7 +38,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                     width="260px"
                     height="auto"
                     style={{
-                      transform: `translateY(${offsetY * 0.61}px)`,
+                      transform: `translateY(${offsetY * 0.63}px)`,
                     }}
                   />
                 </div>
@@ -81,7 +81,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-ți relațiile"
                 />{" "}
-                <div className="pageSlide">
+                <div className="pageSlide" style={{ marginTop: "7px" }}>
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
                     onClick={() => setCopii(false)}
@@ -107,7 +107,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                     width="260px"
                     height="auto"
                     style={{
-                      transform: `translateY(${offsetY * 0.61}px)`,
+                      transform: `translateY(${offsetY * 0.63}px)`,
                     }}
                   />
                 </div>
@@ -127,14 +127,14 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                 </div>
                 <InfoCardRight
                   image="/KidsPlaying.svg"
-                  title="Grup dezvoltare pentru copii"
-                  subtitle="Grupe de vârstă (preşcolari,7/10 ani,11/14ani) axate pe valorificarea potenţialului"
-                  t1="vizual-spaţială - exersare capacităţi perceptive şi reprezentative"
-                  t2="emoţională - exprimare emoţională și descoperirea empatiei"
-                  t3="socială/interpersonală -antrenare conduite prosociale"
-                  t5="verbală/lingvistică - dezvoltare potenţial lingvistic/ imagistic"
-                  t6="creativă - dezvoltare spontaneitate /stimulare potenţial creativ"
-                  t7="spirituală - întelegerea conexiunilor cu ceilalţi, cu natura, cu universul"
+                  title="Grupe de vârstă axate pe valorificarea potenţialului"
+                  subtitle=""
+                  t1="Vizual-spaţială - exersare capacităţi perceptive"
+                  t2="Emoţională - exprimare emoţională și descoperirea empatiei"
+                  t3="Socială/interpersonală -antrenare conduite prosociale"
+                  t5="Verbală/lingvistică - dezvoltare potenţial lingvistic/ imagistic"
+                  t6="Creativă - dezvoltare spontaneitate /stimulare potenţial creativ"
+                  t7="Spirituală - întelegerea conexiunilor cu ceilalţi, cu natura, cu universul"
                   text="Oferă-le aripi copiilor"
                 />
                 <InfoCardLeft
@@ -156,7 +156,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-i relațiile"
                 />{" "}
-                <div className="pageSlide">
+                <div className="pageSlide" style={{ marginTop: "7px" }}>
                   <p>&#8810;</p>
                   <h1> Copii </h1>
                   <span>\</span>

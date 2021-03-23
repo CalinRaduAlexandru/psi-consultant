@@ -1,5 +1,14 @@
 @import "./global.scss";
 
+.ConsiliereBtn {
+  position: absolute;
+  bottom: 3%;
+  left: 37%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
 .EmailsBro-wrapper {
   position: absolute;
   right: 3%;

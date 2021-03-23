@@ -6,9 +6,10 @@
   justify-content: space-between;
   color: $Light;
   width: 100%;
-  background: linear-gradient(180deg, #b55bc6 0%, #5a0f68 100%);
+  background: $PrimaryBtnGradient;
   padding: 0 20px;
   border-radius: 15px;
+  margin-bottom: 50px;
 
   ul {
     list-style-type: none;

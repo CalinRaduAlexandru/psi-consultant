@@ -36,12 +36,12 @@ const ConsiliereEmail = () => {
                 width="260px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.4}px)`,
+                  transform: `translateY(${offsetY * 0.64}px)`,
                 }}
               />
             </div>
           </div>
-          <div className="rectangle-wrapper">
+          <div className="rectangle-wrapper" style={{ paddingBottom: "200px" }}>
             <div className="EmailsBro-wrapper">
               <img
                 src="/EmailsBro.svg"
@@ -193,7 +193,7 @@ const ConsiliereEmail = () => {
                 </div>
               </div>
             </div>
-            <div className="PracticaBtn">
+            <div className="ConsiliereBtn">
               <PrimaryBtn text="Să începem călătoria" />
             </div>
           </div>
