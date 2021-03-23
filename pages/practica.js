@@ -2,10 +2,58 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../components/header";
 import MenuBar from "../components/MenuBar";
+import Faq from "../components/FAQ";
+import PrimaryBtn from "../components/Primary-btn";
 
 const PracticaStudenteasca = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
+  const [faqs, setfaqs] = useState([
+    {
+      question: "SELECŢIE:",
+      answer:
+        "Înscrierea se va face pentru unul dintre cele două module, în funcţie de numărul locurilor disponibile. Se pot înscrie 8-10 persoane într-o grupă ",
+      open: true,
+    },
+    {
+      question: "DURATA:",
+      answer:
+        "16 ore pentru fiecare modul; orarul este flexibil şii se va stabili de comun acord cu participanţii; studenţii vor continua cu activităţi practice, până la acoperirea numărului de ore solicitat de instituţia de învăţământ.",
+      open: false,
+    },
+    {
+      question: "FINALIZAREA PROGRAMULUI:",
+      answer:
+        "Participanţii vor primi adeverinţe de participare care să  certifice efectuarea numărului de ore de practică de specialitate stabilit de unităţile de învăţământ şi calificativul obţinut; ",
+      open: false,
+    },
+    {
+      question: "COSTUL PROGRAMULUI:",
+      answer:
+        "250lei, incluzând materialele de curs. Pentru grupe de studenţi (minim 5 persoane) se oferă o reducere de 20%. .",
+      open: false,
+    },
+    {
+      question: "COORDONATORI:",
+      answer: "drd. Elena Chivu, psiholog  clinician, MA, psihoterapeut ",
+      open: false,
+    },
+  ]);
+
+  const toggleFAQ = (index) => {
+    setfaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,48 +75,54 @@ const PracticaStudenteasca = () => {
           <div className="left-side">
             <MenuBar />
             <div className="resume-wrapper">
-              <div className="hat">
-                <img
-                  src="/resumeHat.svg"
-                  alt="Picture of the author"
-                  width="95px"
-                  height="auto"
-                  style={{
-                    transform: `translateY(${offsetY * 0.32}px)`,
-                  }}
-                />
-              </div>
-              <div className="talk-bubble">
-                <img
-                  src="/resumeTalkbubble.svg"
-                  alt="Picture of the author"
-                  width="55px"
-                  height="auto"
-                  style={{
-                    transform: `translateY(${offsetY * 0.32}px)`,
-                  }}
-                />
-              </div>
               <img
-                src="/resumePeopleGreen.svg"
+                src="/GraduationCuate.svg"
                 alt="Picture of the author"
-                width="325px"
+                width="260px"
                 height="auto"
                 style={{
-                  transform: `translateY(${offsetY * 0.32}px)`,
+                  transform: `translateY(${offsetY * 0.2}px)`,
                 }}
               />
             </div>
           </div>
           <div className="rectangle-wrapper">
-            <div className="elena-bgrmv-wrapper">
+            <div className="teamSpiritHiFive-wrapper">
               <img
-                src="/photoMockup.png"
+                src="/TeamSpiritHiFive.svg"
                 alt="Picture of the author"
                 width="200"
                 height="auto"
-                style={{ borderRadius: "25px" }}
               />
+            </div>
+            <div className="faqText">
+              <h1>OBIECTIVELE PROGRAMULUI: </h1>
+              <p>
+                Familiarizarea studenţilor cu evaluare clinică copil, adolescent
+                /adult;
+              </p>
+              <p>
+                Asigurarea unui bagaj de cunoştinţe minimal pentru desfăşurarea
+                unei <br /> activităţi eficiente în acest domeniu.
+              </p>
+              <p>
+                Cursul include atât prezentări teoretice, cât şi aplicaţii
+                practice.
+              </p>
+              <p>
+                Se prezintă metodologia evaluării clinice, Ghid de bune
+                practici, model raport psihodiagnostic clinic elaborat de CPR,
+                Sistem evaluare clinică, SCID, FFPI, ZKPQ, YSQ, CAT, Fabulele
+                Duss, Desenul persoanei, Desenul familiei, HSPQ, TSCC, EMBU).
+              </p>
+            </div>
+            <div className="faqs">
+              {faqs.map((faq, i) => (
+                <Faq faq={faq} key={i} index={i} toggleFAQ={toggleFAQ} />
+              ))}
+            </div>
+            <div className="PracticaBtn">
+              <PrimaryBtn text="Să începem călătoria" />
             </div>
           </div>
         </main>

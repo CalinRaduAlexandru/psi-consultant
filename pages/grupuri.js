@@ -31,6 +31,19 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
               <div className="left-side">
                 <MenuBar />
 
+                <div className="resume-wrapper">
+                  <img
+                    src="/EthnicFriendship.svg"
+                    alt="Picture of the author"
+                    width="260px"
+                    height="auto"
+                    style={{
+                      transform: `translateY(${offsetY * 0.61}px)`,
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="rectangles">
                 <div className="pageSlide">
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
@@ -39,23 +52,10 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   >
                     Copii
                   </h3>
+                  <span>/</span>
                   <h1> Adulți </h1>
                   <p>&#8811;</p>
                 </div>
-
-                <div className="resume-wrapper">
-                  <img
-                    src="/CreativeTeam.svg"
-                    alt="Picture of the author"
-                    width="260px"
-                    height="auto"
-                    style={{
-                      transform: `translateY(${offsetY * 0.58}px)`,
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="rectangles">
                 <InfoCardRight
                   image="/MarriageCounseling.svg"
                   title="Grup pentru părinţi, viitori părinţi dar si pentru tineri sau adulţi cu:"
@@ -81,24 +81,24 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-ți relațiile"
                 />{" "}
+                <div className="pageSlide">
+                  <p onClick={() => setCopii(false)}>&#8810;</p>
+                  <h3
+                    onClick={() => setCopii(false)}
+                    style={{ color: "#a185a7", cursor: "pointer" }}
+                  >
+                    Copii
+                  </h3>
+                  <span>/</span>
+                  <h1> Adulți </h1>
+                  <p>&#8811;</p>
+                </div>
               </div>
             </>
           ) : (
             <>
               <div className="left-side">
                 <MenuBar />
-
-                <div className="pageSlide">
-                  <p>&#8810;</p>
-                  <h1> Copii </h1>
-                  <h3
-                    onClick={() => setCopii(true)}
-                    style={{ color: "#a185a7", cursor: "pointer" }}
-                  >
-                    Adulți
-                  </h3>
-                  <p onClick={() => setCopii(true)}>&#8811;</p>
-                </div>
 
                 <div className="resume-wrapper">
                   <img
@@ -107,12 +107,24 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                     width="260px"
                     height="auto"
                     style={{
-                      transform: `translateY(${offsetY * 0.52}px)`,
+                      transform: `translateY(${offsetY * 0.61}px)`,
                     }}
                   />
                 </div>
               </div>
               <div className="rectangles">
+                <div className="pageSlide">
+                  <p>&#8810;</p>
+                  <h1> Copii </h1>
+                  <span>\</span>
+                  <h3
+                    onClick={() => setCopii(true)}
+                    style={{ color: "#a185a7", cursor: "pointer" }}
+                  >
+                    Adulți
+                  </h3>
+                  <p onClick={() => setCopii(true)}>&#8811;</p>
+                </div>
                 <InfoCardRight
                   image="/KidsPlaying.svg"
                   title="Grup dezvoltare pentru copii"
@@ -144,6 +156,18 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-i relațiile"
                 />{" "}
+                <div className="pageSlide">
+                  <p>&#8810;</p>
+                  <h1> Copii </h1>
+                  <span>\</span>
+                  <h3
+                    onClick={() => setCopii(true)}
+                    style={{ color: "#a185a7", cursor: "pointer" }}
+                  >
+                    Adulți
+                  </h3>
+                  <p onClick={() => setCopii(true)}>&#8811;</p>
+                </div>
               </div>
             </>
           )}

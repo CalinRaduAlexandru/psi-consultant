@@ -4,8 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: $Dark;
-  width: 250px;
+  color: $Light;
+  width: 100%;
+  background: linear-gradient(180deg, #b55bc6 0%, #5a0f68 100%);
+  padding: 0 20px;
+  border-radius: 15px;
 
   ul {
     list-style-type: none;
@@ -14,5 +17,22 @@
 
   p {
     cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      filter: brightness(1.25);
+    }
+  }
+
+  span {
+    color: #fff;
+  }
+
+  h3:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1);
+    filter: brightness(1.25);
   }
 }
