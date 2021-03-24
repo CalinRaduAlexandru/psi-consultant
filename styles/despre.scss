@@ -9,9 +9,8 @@
 
     .talk-bubble {
       position: absolute;
-      top: 12%;
-      right: 36%;
-      animation: rise 1s alternate infinite;
+      top: 15%;
+      right: 34%;
       z-index: 3;
     }
 
@@ -19,7 +18,6 @@
       position: absolute;
       top: -5%;
       left: 14%;
-      animation: rise 1s alternate infinite;
       z-index: 2;
     }
   }
@@ -58,15 +56,5 @@
 
   h1 {
     color: $Regular;
-  }
-}
-
-@keyframes rise {
-  from {
-    margin-top: 0;
-  }
-
-  to {
-    margin-top: 7.5px;
   }
 }

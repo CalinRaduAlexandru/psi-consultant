@@ -43,72 +43,62 @@ const Contact = () => {
             <div className="contactForm">
               <ContactForm />
             </div>
-            <div className="psiChar">
+            <div className="contactPlantLeft">
               <img
-                src="/PsiChar.svg"
+                src="/PlantLeft.svg"
                 alt="Picture of the author"
-                width="200"
+                width="150"
                 height="auto"
               />{" "}
             </div>
-            <h2 style={{ marginBottom: "50px" }}>Sau</h2>
-            <div className="contactBottomInfo">
-              <div className="contactNumber">
-                <div className="coverIconLeft">
-                  <img
-                    src="/coverIcon.svg"
-                    alt="Picture of the author"
-                    width="120"
-                    height="3"
-                  />{" "}
-                </div>
-                <div className="coverIconRight">
-                  <img
-                    src="/coverIcon.svg"
-                    alt="Picture of the author"
-                    width="120"
-                    height="3"
-                  />{" "}
-                </div>
-                <div className="contact-icon">
+            <div className="psiChar">
+              <img
+                src="/PsiCharTwo.svg"
+                alt="Picture of the author"
+                width="160"
+                height="auto"
+              />{" "}
+            </div>
+            <div className="contactPlantRight">
+              <img
+                src="/PlantRight.svg"
+                alt="Picture of the author"
+                width="150"
+                height="auto"
+              />{" "}
+            </div>
+            <div>
+              <h2
+                style={{
+                  marginBottom: "50px",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                Sau
+              </h2>
+              <div className="contactBottomInfo">
+                <div className="contactNumber" style={{ marginRight: "20px" }}>
                   <img
                     src="/phoneIcon.svg"
                     alt="Picture of the author"
                     width="50"
                     height="auto"
                   />{" "}
+                  <div className="contactText">
+                    <h2>(+40) 0722 834 334</h2>
+                  </div>
                 </div>
-                <div className="contactText">
-                  <h2>(+40) 0722 834 334</h2>
-                </div>
-              </div>
-              <div className="contactEmail">
-                <div className="coverIconLeft">
-                  <img
-                    src="/coverIcon.svg"
-                    alt="Picture of the author"
-                    width="120"
-                    height="3"
-                  />{" "}
-                </div>
-                <div className="coverIconRight">
-                  <img
-                    src="/coverIcon.svg"
-                    alt="Picture of the author"
-                    width="120"
-                    height="3"
-                  />{" "}
-                </div>
-                <div className="contact-icon" style={{ marginTop: "5px" }}>
+                <div className="contactEmail">
                   <img
                     src="/ContactMailIcon.svg"
                     alt="Picture of the author"
                     width="50"
                     height="auto"
                   />{" "}
-                </div>
-                <div className="contactText">
-                  <h2>elena@psi-consult.ro</h2>
+                  <div className="contactText">
+                    <h2>elena@psi-consult.ro</h2>
+                  </div>
                 </div>
               </div>
             </div>

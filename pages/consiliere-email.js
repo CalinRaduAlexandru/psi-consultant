@@ -46,7 +46,7 @@ const ConsiliereEmail = () => {
               <img
                 src="/EmailsBro.svg"
                 alt="Picture of the author"
-                width="200"
+                width="180"
                 height="auto"
               />
             </div>

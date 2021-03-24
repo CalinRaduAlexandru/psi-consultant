@@ -6,33 +6,48 @@
   padding-bottom: 60px;
   width: 100%;
   max-width: 900px;
-  background: $gradientPinkTwo;
+  background: $gradientLight;
   border-radius: 15px;
-  opacity: 0.9;
   margin-top: 8px;
   margin-bottom: -20px;
-  color: $Dark;
+  color: $White;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .contactForm {
-    margin-right: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .contactPlantLeft {
+    position: absolute;
+    bottom: 40%;
+    left: -1%;
+    z-index: 0;
+  }
+
+  .contactPlantRight {
+    position: absolute;
+    bottom: 39.2%;
+    right: -1%;
+    z-index: 0;
   }
 
   .psiChar {
     position: absolute;
-    right: 20%;
+    right: 15%;
+    top: 9%;
+    z-index: 3;
   }
 
   .contactBottomInfo {
-    width: 100%;
+    width: 700px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .contactText {
-      padding: 40px 0;
-      color: $Black;
+      color: $White;
     }
   }
 
@@ -42,29 +57,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    padding: 25px 0;
-    border-left: 3px solid $Light;
-    border-right: 3px solid $Light;
-    border-bottom: 3px solid $Light;
+    background: linear-gradient(360deg, #c865db 5.32%, #e3a8ed 120%);
+    background: $gradientPinkTwo;
+    background: linear-gradient(180deg, #dbafe3 5.32%, #e4beeb 120%);
+    background: linear-gradient(180deg, #dfbae6 0%, #dd9de8 100%);
+    background: linear-gradient(180deg, #ab41bf 5.32%, #d492de 100%);
+    width: 320px;
+    border-radius: 15px;
+    padding: 45px 0;
     position: relative;
-
-    .contact-icon {
-      position: absolute;
-      top: -25px;
-    }
-
-    .coverIconLeft {
-      position: absolute;
-      top: -17px;
-      left: -3px;
-    }
-
-    .coverIconRight {
-      position: absolute;
-      top: -17px;
-      right: -3px;
-    }
+    -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
+    box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
   }
 }
 
@@ -92,9 +95,8 @@
 
 .form-content-right {
   margin-top: -40px;
-  color: #fff;
+  color: $White;
   padding: 50px 50px 20px 50px;
-  max-width: 600px;
 }
 
 .form-img-2 {
@@ -118,7 +120,7 @@
 }
 
 .form > h1 {
-  color: $Regular;
+  color: $White;
   margin: 10px 0 20px 0;
   font-size: 21px;
   cursor: default;
@@ -130,13 +132,15 @@
 }
 
 .form {
-  width: 100%;
+  width: 700px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: $Light;
+  background: $gradientPinkTwo;
+  background: linear-gradient(180deg, #dbafe3 5.32%, #e4beeb 120%);
+  background: linear-gradient(180deg, #ab41bf 5.32%, #d492de 100%);
   padding: 30px 50px 50px 50px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
@@ -147,6 +151,7 @@
   margin-top: 5px;
   margin-bottom: 0.5rem;
   width: 80%;
+  max-width: 270px;
 }
 
 .form-inputs p {
@@ -159,7 +164,7 @@
   display: flex;
   font-size: 0.8rem;
   margin-bottom: 6px;
-  color: $Dark;
+  color: $White;
   align-self: flex-start;
 }
 
@@ -171,6 +176,8 @@
   height: 40px;
   width: 100%;
   border: none;
+  background: #f4e1f5;
+  color: $Black;
 }
 
 .form-input-message {
@@ -200,85 +207,9 @@
   border: none;
   color: #fff;
   font-size: 1rem;
+  max-width: 270px;
 }
 
 .form-input-btn:hover {
   filter: brightness(1.2);
-}
-
-@media (min-width: 1024px) {
-  .form-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .space-container {
-    width: 300px;
-    height: 40vh;
-    max-height: 220px;
-    position: absolute;
-    top: 140%;
-    left: -30%;
-    z-index: 1;
-  }
-
-  .form-img {
-  }
-
-  .form-content-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .form > h1 {
-    font-size: 16px;
-  }
-
-  .form-container {
-    padding: 60px 20px 0px 20px;
-  }
-
-  .form-img {
-    width: 30%;
-  }
-
-  .form-img-2 {
-    width: 50%;
-    margin-top: 30px;
-  }
-
-  .close-btn {
-    font-size: 20px;
-  }
-
-  .form-content-right {
-    padding: 0 20px;
-    margin-top: 10px;
-    margin-bottom: -20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .form-img-2 {
-    width: 92%;
-    margin-top: 50px;
-    margin-left: 6px;
-  }
-
-  .form-container {
-    padding: 60px 0px 0px 0px;
-  }
-
-  .form-content-right {
-    padding: 0 10px;
-    margin-top: 0px;
-  }
-
-  .form > h1 {
-    font-size: 13px;
-  }
 }

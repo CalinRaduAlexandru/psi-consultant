@@ -4,9 +4,10 @@ $Dark: #5a0f68;
 $Regular: #9c33b0;
 $Light: #ecbbf4;
 $Black: #310639;
+$White: #f5e9f7;
 $GreyDark: #604c64;
 $GreyRegular: #a185a7;
-$GreyLight: #d9c0de;
+$GreyLight: #d4afdb;
 
 $bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
@@ -21,7 +22,7 @@ html,
 body {
   overflow-x: hidden;
   margin: 0;
-  color: #fff;
+  color: $White;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #f4e1f5 0%, #e1c5e3 100%);
 }
@@ -37,6 +38,8 @@ a {
 
 textarea {
   resize: none;
+  background: #f4e1f5;
+  color: $Black;
 }
 
 .rectangles ul {
@@ -123,7 +126,7 @@ nav {
 
 .primary-btn {
   background: $PrimaryBtnGradient;
-  color: #fff;
+  color: $White;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -143,7 +146,7 @@ nav {
 .secondary-btn {
   background: linear-gradient(180deg, #faeefc 0%, #ded0e0 100%);
 
-  color: $Regular;
+  color: $Dark;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -178,6 +181,11 @@ nav {
   position: relative;
   background: linear-gradient(180deg, #bb98c0 0%, #ca8ed4 100%);
   background: linear-gradient(180deg, #c88ad2 0%, #ab69b6 100%);
+  background: linear-gradient(180deg, #da8be9 19.55%, #9c33b0 133%);
+  background: linear-gradient(180deg, #d1a5d9 0%, #b46fbf 100%);
+  background: linear-gradient(180deg, #e09deb 5.32%, #c057d4 120%);
+  background: linear-gradient(180deg, #e3a8ed 5.32%, #c865db 120%);
+  background: linear-gradient(360deg, #ab41bf 5.32%, #d492de 100%);
 }
 
 .links {
@@ -185,7 +193,7 @@ nav {
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
-  color: #fff;
+  color: $White;
   margin-top: 50px;
 }
 
@@ -198,7 +206,7 @@ nav {
 }
 
 .rec-arrow {
-  color: #fff !important;
+  color: $White !important;
   background: $gradientPinkTwo !important;
 }
 

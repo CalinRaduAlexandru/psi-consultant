@@ -44,6 +44,7 @@
     .psiholog-elena {
       position: absolute;
       background: $gradientHeader;
+      background: linear-gradient(180deg, #c057d4 5.32%, #e09deb 120%);
       border-top-left-radius: 25px;
       border-bottom-right-radius: 15px;
       padding: 0px 15px 8px 90px;
@@ -51,10 +52,10 @@
       bottom: 40px;
       left: -34px;
       color: $Dark;
+      color: $White;
       font-weight: 600;
       font-size: 16px;
       width: 345px;
-      filter: brightness(0.92);
     }
   }
 }

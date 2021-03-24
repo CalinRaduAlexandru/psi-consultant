@@ -61,19 +61,20 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
               t5="Determinare stil de învăţare; Dezvoltare abilităţi de învăţare."
               text="Găsește echilibrul"
             />
-
-            <InfoCardRight
-              image="/CoupleBicycle.svg"
-              title="Psihoterapie de cuplu şi familie"
-              t1="Consiliere maritală şi premaritală; Fuziune şi autonomie;"
-              t2="Diagnoza familială;Transformarea competiţiei în cooperare;"
-              t3="Adaptare abuz fizic /emoţional;Comunicare încuplu;"
-              t4="Depaşirea situaţiilor de criză; Negocierea conflictelor;"
-              t5="Parenting, adaptare la schimbările legate de vârsta copilului"
-              t6="Infidelitate, gelozie, divorţ; Redobândirea relaţiei intime;"
-              t7="Familii uniparentale; Probleme legate de schimbare rol."
-              text="Fortifică-ți relațiile"
-            />
+            <div className="CoupleInfoCard">
+              <InfoCardRight
+                image="/CoupleBicycle.svg"
+                title="Psihoterapie de cuplu şi familie"
+                t1="Consiliere maritală şi premaritală; Fuziune şi autonomie;"
+                t2="Diagnoza familială;Transformarea competiţiei în cooperare;"
+                t3="Adaptare abuz fizic /emoţional;Comunicare încuplu;"
+                t4="Depaşirea situaţiilor de criză; Negocierea conflictelor;"
+                t5="Parenting, adaptare la schimbările legate de vârsta copilului"
+                t6="Infidelitate, gelozie, divorţ; Redobândirea relaţiei intime;"
+                t7="Familii uniparentale; Probleme legate de schimbare rol."
+                text="Fortifică-ți relațiile"
+              />
+            </div>
           </div>
         </main>
       </div>

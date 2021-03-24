@@ -48,12 +48,15 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
                     onClick={() => setCopii(false)}
-                    style={{ color: "#a185a7", cursor: "pointer" }}
+                    style={{
+                      color: "#dca8e6",
+                      cursor: "pointer",
+                    }}
                   >
                     Copii
                   </h3>
-                  <span>/</span>
-                  <h1> Adulți </h1>
+                  <span style={{ position: "absolute", left: "50%" }}>|</span>
+                  <h1 style={{ marginLeft: "240px" }}> Adulți </h1>
                   <p>&#8811;</p>
                 </div>
                 <InfoCardRight
@@ -85,12 +88,12 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
                     onClick={() => setCopii(false)}
-                    style={{ color: "#a185a7", cursor: "pointer" }}
+                    style={{ color: "#dca8e6", cursor: "pointer" }}
                   >
                     Copii
                   </h3>
-                  <span>/</span>
-                  <h1> Adulți </h1>
+                  <span style={{ position: "absolute", left: "50%" }}>|</span>
+                  <h1 style={{ marginLeft: "240px" }}> Adulți </h1>
                   <p>&#8811;</p>
                 </div>
               </div>
@@ -115,11 +118,14 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
               <div className="rectangles">
                 <div className="pageSlide">
                   <p>&#8810;</p>
-                  <h1> Copii </h1>
-                  <span>\</span>
+                  <h1 style={{ marginRight: "240px" }}> Copii </h1>
+                  <span style={{ position: "absolute", left: "50%" }}>|</span>
                   <h3
                     onClick={() => setCopii(true)}
-                    style={{ color: "#a185a7", cursor: "pointer" }}
+                    style={{
+                      color: "#dca8e6",
+                      cursor: "pointer",
+                    }}
                   >
                     Adulți
                   </h3>
@@ -158,11 +164,11 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                 />{" "}
                 <div className="pageSlide" style={{ marginTop: "7px" }}>
                   <p>&#8810;</p>
-                  <h1> Copii </h1>
-                  <span>\</span>
+                  <h1 style={{ marginRight: "240px" }}> Copii </h1>
+                  <span style={{ position: "absolute", left: "50%" }}>|</span>
                   <h3
                     onClick={() => setCopii(true)}
-                    style={{ color: "#a185a7", cursor: "pointer" }}
+                    style={{ color: "#dca8e6", cursor: "pointer" }}
                   >
                     Adulți
                   </h3>
