@@ -73,6 +73,7 @@ const Contact = () => {
                   marginBottom: "50px",
                   display: "flex",
                   justifyContent: "center",
+                  color: "#9c33b0",
                 }}
               >
                 Sau
