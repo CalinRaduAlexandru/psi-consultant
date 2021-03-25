@@ -20,18 +20,18 @@
     position: relative;
     z-index: 1;
   }
-  .contactPlantLeft {
+  .flowerPot {
     position: absolute;
-    bottom: 40%;
-    left: -1%;
-    z-index: 0;
+    bottom: 45%;
+    left: 15%;
+    z-index: 3;
   }
 
-  .contactPlantRight {
+  .roomLines {
     position: absolute;
-    bottom: 39.2%;
-    right: -1%;
-    z-index: 0;
+    bottom: 44%;
+    right: 14%;
+    z-index: 2;
   }
 
   .psiChar {

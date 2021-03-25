@@ -43,9 +43,9 @@ const Contact = () => {
             <div className="contactForm">
               <ContactForm />
             </div>
-            <div className="contactPlantLeft">
+            <div className="flowerPot">
               <img
-                src="/PlantLeft.svg"
+                src="/FlowerPot.svg"
                 alt="Picture of the author"
                 width="150"
                 height="auto"
@@ -59,11 +59,11 @@ const Contact = () => {
                 height="auto"
               />{" "}
             </div>
-            <div className="contactPlantRight">
+            <div className="roomLines">
               <img
-                src="/PlantRight.svg"
+                src="/roomLines.svg"
                 alt="Picture of the author"
-                width="150"
+                width="650"
                 height="auto"
               />{" "}
             </div>
