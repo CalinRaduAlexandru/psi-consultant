@@ -57,11 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(360deg, #c865db 5.32%, #e3a8ed 120%);
-    background: $gradientPinkTwo;
-    background: linear-gradient(180deg, #dbafe3 5.32%, #e4beeb 120%);
-    background: linear-gradient(180deg, #dfbae6 0%, #dd9de8 100%);
-    background: linear-gradient(180deg, #ab41bf 5.32%, #d492de 100%);
+    background: $MainGradient;
     width: 320px;
     border-radius: 15px;
     padding: 45px 0;
@@ -138,9 +134,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: $gradientPinkTwo;
-  background: linear-gradient(180deg, #dbafe3 5.32%, #e4beeb 120%);
-  background: linear-gradient(180deg, #ab41bf 5.32%, #d492de 100%);
+  background: $MainGradient;
   padding: 30px 50px 50px 50px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);

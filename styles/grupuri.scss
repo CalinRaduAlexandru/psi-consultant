@@ -8,11 +8,7 @@
   color: $Regular;
   color: $White;
   width: 100%;
-  background: $PrimaryBtnGradient;
-  background: linear-gradient(360deg, #ab41bf 5.32%, #c579d1 120%);
-  background: linear-gradient(360deg, #c865db 5.32%, #e3a8ed 120%);
-  background: linear-gradient(180deg, #d5a4de 0%, #dd9de8 100%);
-  background: linear-gradient(360deg, #ab41bf 5.32%, #d492de 100%);
+  background: $MainGradientReverse;
   padding: 0 20px;
   border-radius: 15px;
   margin-bottom: 50px;
