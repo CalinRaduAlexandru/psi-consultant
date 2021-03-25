@@ -91,3 +91,25 @@
   max-height: 1000px;
   opacity: 1;
 }
+
+@media (max-width: 1000px) {
+  .teamSpiritHiFive-wrapper {
+    display: none;
+  }
+
+  .PracticaBtn {
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%);
+    margin-bottom: 50px;
+  }
+
+  .faqs {
+    position: static;
+    margin-bottom: 170px;
+  }
+  .faqText {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}

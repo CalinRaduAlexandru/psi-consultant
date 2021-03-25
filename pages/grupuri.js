@@ -56,7 +56,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                     Copii
                   </h3>
                   <span style={{ position: "absolute", left: "50%" }}>|</span>
-                  <h1 style={{ marginLeft: "240px" }}> Adulți </h1>
+                  <h1 id="topRightSwitchBar"> Adulți </h1>
                   <p>&#8811;</p>
                 </div>
                 <InfoCardRight
@@ -93,7 +93,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                     Copii
                   </h3>
                   <span style={{ position: "absolute", left: "50%" }}>|</span>
-                  <h1 style={{ marginLeft: "240px" }}> Adulți </h1>
+                  <h1 id="bottomRightSwitchBar"> Adulți </h1>
                   <p>&#8811;</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
               <div className="rectangles">
                 <div className="pageSlide">
                   <p>&#8810;</p>
-                  <h1 style={{ marginRight: "240px" }}> Copii </h1>
+                  <h1 id="topLeftSwitchBar"> Copii </h1>
                   <span style={{ position: "absolute", left: "50%" }}>|</span>
                   <h3
                     onClick={() => setCopii(true)}
@@ -164,7 +164,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                 />{" "}
                 <div className="pageSlide" style={{ marginTop: "7px" }}>
                   <p>&#8810;</p>
-                  <h1 style={{ marginRight: "240px" }}> Copii </h1>
+                  <h1 id="bottomLeftSwitchBar"> Copii </h1>
                   <span style={{ position: "absolute", left: "50%" }}>|</span>
                   <h3
                     onClick={() => setCopii(true)}

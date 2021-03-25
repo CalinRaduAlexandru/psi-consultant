@@ -1,4 +1,4 @@
-const Header = ({ title }) => {
+const Header = ({ title, toggle }) => {
   return (
     <header className="header">
       <div className="left-header">
@@ -27,7 +27,11 @@ const Header = ({ title }) => {
       <h3 className="headerContact">
         Bucuresti <br /> Mobil: 0722 834 334 <br /> Email: elena@psi-consult.ro
       </h3>
-      <div className="headerMenu"> &#9776;</div>
+      {isOpen && <h1>Yey!</h1>}
+      <div className="headerMenu" onClick={toggle}>
+        {" "}
+        &#9776;
+      </div>
     </header>
   );
 };

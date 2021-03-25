@@ -8,8 +8,15 @@ import Testimony from "../components/Testimony";
 import Carousel from "react-elastic-carousel";
 import { Testimonials } from "../components/Testimonials-data";
 
-export default function Home({ name, text }) {
+const Home = ({ name, text }) => {
   const [offsetY, setOffsetY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
   const handleScroll = () => setOffsetY(window.pageYOffset);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -35,7 +42,7 @@ export default function Home({ name, text }) {
         />
       </Head>
       <div className="container">
-        <Header title="Consultanță de psihoterapie" />
+        <Header title="Consultanță de psihoterapie" toggle={toggle} />
         <main className="main">
           <MenuBar />
           <div className="mobileContainer">
@@ -120,4 +127,5 @@ export default function Home({ name, text }) {
       </div>
     </div>
   );
-}
+};
+export default Home;

@@ -16,7 +16,7 @@ export const ContactForm = () => {
   }
   return (
     <div className="contact-section">
-      <div data-aos="fade-right" className="form-content-right">
+      <div className="form-content-right">
         <form className="form" onSubmit={addContact}>
           <h1 className="form-title">Intră în contact cu mine!</h1>
           <div className="form-inputs">

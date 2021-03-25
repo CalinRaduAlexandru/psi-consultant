@@ -40,46 +40,42 @@ const Contact = () => {
             </div>
           </div>
           <div className="contactContainer">
-            <div className="contactForm">
+            <div className="mobileContact">
               <ContactForm />
             </div>
-            <div className="flowerPot">
-              <img
-                src="/FlowerPot.svg"
-                alt="Picture of the author"
-                width="150"
-                height="auto"
-              />{" "}
-            </div>
-            <div className="psiChar">
-              <img
-                src="/PsiCharTwo.svg"
-                alt="Picture of the author"
-                width="160"
-                height="auto"
-              />{" "}
-            </div>
-            <div className="roomLines">
-              <img
-                src="/roomLines.svg"
-                alt="Picture of the author"
-                width="650"
-                height="auto"
-              />{" "}
+            <div className="desktopContact">
+              <div className="contactForm">
+                <ContactForm />
+              </div>
+              <div className="flowerPot">
+                <img
+                  src="/FlowerPot.svg"
+                  alt="Picture of the author"
+                  width="150"
+                  height="auto"
+                />{" "}
+              </div>
+              <div className="psiChar">
+                <img
+                  src="/PsiCharTwo.svg"
+                  alt="Picture of the author"
+                  width="160"
+                  height="auto"
+                />{" "}
+              </div>
+              <div className="roomLines">
+                <img
+                  src="/roomLines.svg"
+                  alt="Picture of the author"
+                  width="650"
+                  height="auto"
+                />{" "}
+              </div>
             </div>
             <div>
-              <h2
-                style={{
-                  marginBottom: "50px",
-                  display: "flex",
-                  justifyContent: "center",
-                  color: "#9c33b0",
-                }}
-              >
-                Sau
-              </h2>
+              <h2 id="contactSau">Sau</h2>
               <div className="contactBottomInfo">
-                <div className="contactNumber" style={{ marginRight: "20px" }}>
+                <div className="contactNumber">
                   <img
                     src="/phoneIcon.svg"
                     alt="Picture of the author"
