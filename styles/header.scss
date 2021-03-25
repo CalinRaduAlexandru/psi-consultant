@@ -12,6 +12,35 @@
   font-weight: normal;
   background: $MainGradient;
 
+  @media (max-width: 1000px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5px 20px;
+  }
+
+  .headerMenu {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    @media (min-width: 1300px) {
+      display: none;
+    }
+  }
+
+  .headerContact {
+    display: none;
+
+    @media (min-width: 1300px) {
+      display: block;
+    }
+  }
+
   .header h1,
   h3 {
     font-size: 16px;
@@ -27,10 +56,38 @@
     color: $White;
   }
 
+  @media (max-width: 560px) {
+    .header-title {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .header-title {
+      font-size: 7px;
+    }
+  }
+
   .left-header {
     height: 80%;
     display: flex;
     align-items: center;
+
+    #MobileLogo {
+      display: none;
+    }
+
+    @media (max-width: 1000px) {
+      #cabinetHeader {
+        display: none;
+      }
+    }
+
+    @media (max-width: 650px) {
+      #MobileLogo {
+        display: block;
+      }
+    }
   }
 
   .logo {
@@ -43,6 +100,11 @@
       top: 12.28px;
       right: 11px;
       animation: fit 2s alternate infinite;
+    }
+  }
+  @media (max-width: 650px) {
+    .logo {
+      display: none;
     }
   }
 }

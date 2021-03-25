@@ -38,6 +38,18 @@ export default function Home({ name, text }) {
         <Header title="Consultanță de psihoterapie" />
         <main className="main">
           <MenuBar />
+          <div className="mobileContainer">
+            <h1 id="mobileHomeText">
+              Depășim împreună toate blocajele pentru a înflori spre adevarătul
+              tău potențial.
+              <div className="underline">
+                <img src="/underline.svg" alt="underline" width="200px" />
+              </div>
+            </h1>
+            <div className="primary-btn-wrapper">
+              <PrimaryBtn text="Începe creșterea" />
+            </div>
+          </div>
           <div className="main-title-container">
             <div className="main-title">
               <h3>
@@ -66,6 +78,7 @@ export default function Home({ name, text }) {
           </div>
         </main>
         <img
+          id="shelves"
           src="/Shelves.svg"
           alt="rafturi terapie"
           width="800px"
