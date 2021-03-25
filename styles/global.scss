@@ -1,15 +1,15 @@
 //Main Pallette
 
-$Dark: #6b36a3;
-$Regular: #975cd6;
-$Light: #ba85f2;
+$Dark: #522e9f;
+$Regular: #8962d9;
+$Light: #a478ff;
 $Black: #1d0536;
 $White: #ede6f5;
 $GreyDark: #715d85;
 $GreyRegular: #a691ba;
 $GreyLight: #cab8db;
-$MainGradient: linear-gradient(180deg, #a57ae6 5.32%, #b78ef5 100%);
-$MainGradientReverse: linear-gradient(360deg, #a57ae6 5.32%, #b78ef5 100%);
+$MainGradient: linear-gradient(180deg, #9c78e8 5.32%, #bea1fc 100%);
+$MainGradientReverse: linear-gradient(360deg, #9c78e8 5.32%, #bea1fc 100%);
 
 $bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
@@ -18,7 +18,7 @@ $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
 
 $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
 
-$PrimaryBtnGradient: linear-gradient(360deg, #6b36a3 0%, #9a63d4 100%);
+$PrimaryBtnGradient: linear-gradient(360deg, #522e9f 0%, #8962d9 100%);
 
 html,
 body {
@@ -111,7 +111,7 @@ nav {
 
     &:hover {
       transition: 0.1s ease-in-out;
-      filter: brightness(1.55);
+      filter: brightness(1.25);
       transform: perspective(500px) translate3d(10px, 0, 10px);
     }
     &:focus {
