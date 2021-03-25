@@ -9,7 +9,7 @@ export const Testimonials = [
     id: 2,
     name: "Cătălina",
     text:
-      "Apreciez faptul ca ai avut incredere astazi ca voi avea rezultate pozitive pana la urma , ca ai avut rabdare cu mine... Nu stiu daca vreodata o sa pot sa iti rasplatesc tot efortul pe care il depui in aceasta terapie cu mine...",
+      "Apreciez faptul ca ai avut incredere astazi ca voi avea rezultate pozitive pana la urma, ca ai avut rabdare cu mine... Nu stiu daca vreodata o sa pot sa iti rasplatesc tot efortul pe care il depui in aceasta terapie cu mine...",
   },
   {
     id: 3,

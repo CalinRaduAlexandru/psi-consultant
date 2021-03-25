@@ -51,6 +51,12 @@ const Contact = () => {
                 height="auto"
               />{" "}
             </div>
+            <img
+              src="/test.webp"
+              alt="Picture of the author"
+              width="550"
+              height="auto"
+            />{" "}
             <div className="psiChar">
               <img
                 src="/PsiCharTwo.svg"
