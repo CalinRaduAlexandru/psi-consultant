@@ -8,17 +8,17 @@ $White: #ede6f5;
 $GreyDark: #715d85;
 $GreyRegular: #a691ba;
 $GreyLight: #cab8db;
-$MainGradient: linear-gradient(180deg, #b78ef5 5.32%, #dac5fa 100%);
-$MainGradientReverse: linear-gradient(360deg, #b78ef5 5.32%, #dac5fa 100%);
+$MainGradient: linear-gradient(180deg, #a57ae6 5.32%, #b78ef5 100%);
+$MainGradientReverse: linear-gradient(360deg, #a57ae6 5.32%, #b78ef5 100%);
 
-$bgColor: linear-gradient(180deg, #ddcbf7 0%, #e8dcfa 100%);
+$bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
 
 $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
 
 $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
 
-$PrimaryBtnGradient: linear-gradient(180deg, #6b36a3 0%, #9a63d4 100%);
+$PrimaryBtnGradient: linear-gradient(360deg, #6b36a3 0%, #9a63d4 100%);
 
 html,
 body {
@@ -182,7 +182,6 @@ nav {
   overflow: hidden;
   position: relative;
   background: $MainGradientReverse;
-  background: #b78ef5;
 }
 
 .links {
