@@ -8,16 +8,16 @@ $White: #ede6f5;
 $GreyDark: #715d85;
 $GreyRegular: #a691ba;
 $GreyLight: #cab8db;
-$MainGradient: linear-gradient(180deg, #975cd6 5.32%, #c08ef5 100%);
-$MainGradientReverse: linear-gradient(360deg, #975cd6 5.32%, #c08ef5 100%);
+$MainGradient: linear-gradient(180deg, #b78ef5 5.32%, #dac5fa 100%);
+$MainGradientReverse: linear-gradient(360deg, #b78ef5 5.32%, #dac5fa 100%);
 
-$bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
+$bgColor: linear-gradient(180deg, #ddcbf7 0%, #e8dcfa 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
 
 $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
 
 $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
-$gradientPinkThree: linear-gradient(143.94deg, #da8be9 19.55%, #9c33b0 86.14%);
+
 $PrimaryBtnGradient: linear-gradient(180deg, #6b36a3 0%, #9a63d4 100%);
 
 html,
@@ -167,7 +167,7 @@ nav {
 }
 
 .wave {
-  margin-top: -50px;
+  margin-top: -40px;
   width: 100vw;
 }
 
@@ -177,11 +177,12 @@ nav {
   justify-content: flex-end;
   align-items: center;
   width: 100vw;
-  height: 200px;
+  height: 150px;
   margin-top: -20px;
   overflow: hidden;
   position: relative;
   background: $MainGradientReverse;
+  background: #b78ef5;
 }
 
 .links {
@@ -190,7 +191,7 @@ nav {
   font-size: 18px;
   line-height: 27px;
   color: $White;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .links > a {
@@ -203,7 +204,7 @@ nav {
 
 .rec-arrow {
   color: $White !important;
-  background: $gradientPinkTwo !important;
+  background: $MainGradientReverse !important;
 }
 
 .rec-arrow-right {
@@ -215,7 +216,7 @@ nav {
 }
 
 .rec-arrow:hover {
-  background: $gradientPinkThree !important;
+  filter: brightness(1.1) !important;
 }
 
 .rec-arrow:disabled {
