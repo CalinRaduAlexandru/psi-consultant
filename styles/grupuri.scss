@@ -39,3 +39,33 @@
     filter: brightness(1.1);
   }
 }
+
+#topRightSwitchBar {
+  margin-left: 240px;
+}
+
+#topLeftSwitchBar {
+  margin-right: 240px;
+}
+
+@media (max-width: 1000px) {
+  .pageSlide {
+    margin: 0 auto;
+  }
+
+  #topRightSwitchBar {
+    margin-left: 70px;
+  }
+
+  #topLeftSwitchBar {
+    margin-right: 70px;
+  }
+
+  #bottomRightSwitchBar {
+    margin-left: 70px;
+  }
+
+  #bottomLeftSwitchBar {
+    margin-right: 70px;
+  }
+}

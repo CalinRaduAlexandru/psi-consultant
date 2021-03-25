@@ -8,8 +8,10 @@ import Testimony from "../components/Testimony";
 import Carousel from "react-elastic-carousel";
 import { Testimonials } from "../components/Testimonials-data";
 
-export default function Home({ name, text }) {
+const Home = ({ name, text }) => {
   const [offsetY, setOffsetY] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleScroll = () => setOffsetY(window.pageYOffset);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -120,4 +122,5 @@ export default function Home({ name, text }) {
       </div>
     </div>
   );
-}
+};
+export default Home;

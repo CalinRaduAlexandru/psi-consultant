@@ -35,13 +35,12 @@
   margin-bottom: -20px;
   color: $Dark;
 
-  @media (max-width: 960px) {
-    padding: 20px;
-  }
-
   @media (max-width: 600px) {
     padding: 20px;
     width: 95vw;
+  }
+  @media (max-width: 960px) {
+    padding: 20px;
   }
 
   .elena-bgrmv-wrapper {
@@ -53,7 +52,7 @@
     align-items: center;
 
     @media (max-width: 960px) {
-      display: none;
+      position: static;
     }
 
     h3 {

@@ -4,7 +4,7 @@ $Dark: #522e9f;
 $Regular: #8962d9;
 $Light: #a478ff;
 $Black: #1d0536;
-$White: #ede6f5;
+$White: #f3f0f7;
 $GreyDark: #715d85;
 $GreyRegular: #a691ba;
 $GreyLight: #cab8db;
@@ -36,12 +36,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-textarea {
-  resize: none;
-  background: #f4e1f5;
-  color: $Black;
 }
 
 .rectangles ul {
@@ -200,6 +194,10 @@ nav {
 }
 
 @media (max-width: 1000px) {
+  .footer-wrapper {
+    margin-top: -10px;
+  }
+
   .links {
     justify-content: center;
     align-items: center;
@@ -208,7 +206,11 @@ nav {
   }
 
   .secondary-btn {
-    display: none;
+    margin-top: 35px;
+  }
+
+  .wave {
+    marign-bottom: 20px;
   }
 }
 

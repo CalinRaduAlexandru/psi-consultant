@@ -65,6 +65,17 @@
     -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
     box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
   }
+
+  .contactNumber {
+    margin-right: 20px;
+  }
+
+  #contactSau {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    color: #522e9f;
+  }
 }
 
 .form-container {
@@ -116,10 +127,14 @@
 }
 
 .form > h1 {
-  color: $White;
+  color: $Dark;
   margin: 10px 0 20px 0;
   font-size: 21px;
   cursor: default;
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
 }
 
 .form-title {
@@ -170,7 +185,7 @@
   height: 40px;
   width: 100%;
   border: none;
-  background: #f4e1f5;
+  background: #edebf0;
   color: $Black;
 }
 
@@ -184,8 +199,14 @@
   border: none;
 }
 
+textarea {
+  resize: none;
+  background: #edebf0;
+  color: $Black;
+}
+
 .form-input::placeholder {
-  color: $GreyDark;
+  color: #edebf0;
   font-size: 12px;
 }
 
@@ -206,4 +227,40 @@
 
 .form-input-btn:hover {
   filter: brightness(1.2);
+}
+
+.mobileContact {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .contactContainer {
+  }
+  #contactSau {
+    margin-bottom: 20px;
+  }
+
+  .desktopContact {
+    display: none;
+  }
+
+  .mobileContact {
+    display: block;
+    z-index: 100;
+
+    .form {
+      width: 80vw;
+    }
+  }
+  .contactBottomInfo {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contactNumber,
+    .contactEmail {
+      margin: 25px;
+    }
+  }
 }
