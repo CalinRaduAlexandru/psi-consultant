@@ -1,17 +1,15 @@
 //Main Pallette
 
-$Dark: #5a0f68;
-$Regular: #9c33b0;
-$Light: #ecbbf4;
-$Black: #310639;
-$White: #f5e9f7;
-$GreyDark: #604c64;
-$GreyRegular: #a185a7;
-$GreyLight: #d4afdb;
-$MainGradient: linear-gradient(180deg, #ab41bf 5.32%, #d492de 100%);
-$MainGradient: linear-gradient(180deg, #8b51c9 5.32%, #b781f0 100%);
-$MainGradientReverse: linear-gradient(360deg, #ab41bf 5.32%, #d492de 100%);
-$MainGradientReverse: linear-gradient(360deg, #8b51c9 5.32%, #b781f0 100%);
+$Dark: #6b36a3;
+$Regular: #975cd6;
+$Light: #ba85f2;
+$Black: #1d0536;
+$White: #ede6f5;
+$GreyDark: #715d85;
+$GreyRegular: #a691ba;
+$GreyLight: #cab8db;
+$MainGradient: linear-gradient(180deg, #975cd6 5.32%, #c08ef5 100%);
+$MainGradientReverse: linear-gradient(360deg, #975cd6 5.32%, #c08ef5 100%);
 
 $bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
@@ -20,8 +18,7 @@ $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
 
 $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
 $gradientPinkThree: linear-gradient(143.94deg, #da8be9 19.55%, #9c33b0 86.14%);
-$PrimaryBtnGradient: linear-gradient(180deg, #b55bc6 0%, #5a0f68 100%);
-$PrimaryBtnGradient: linear-gradient(180deg, #7e57c2 0%, #b39ddb 100%);
+$PrimaryBtnGradient: linear-gradient(180deg, #6b36a3 0%, #9a63d4 100%);
 
 html,
 body {
