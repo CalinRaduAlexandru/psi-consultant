@@ -9,6 +9,7 @@ import "./../styles/infoCard.scss";
 import "./../styles/faqs.scss";
 
 import "./../styles/header.scss";
+import "./../styles/dropdown.scss";
 import "./../styles/testimony.scss";
 import Footer from "../components/Footer";
 

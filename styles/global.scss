@@ -11,7 +11,7 @@ $GreyLight: #cab8db;
 $MainGradient: linear-gradient(180deg, #9c78e8 5.32%, #bea1fc 100%);
 $MainGradientReverse: linear-gradient(360deg, #9c78e8 5.32%, #bea1fc 100%);
 
-$bgColor: linear-gradient(180deg, #f3ddf5 0%, #f1e6f2 100%);
+$bgColor: linear-gradient(180deg, #ede7f6 0%, #d1c4e9 100%);
 $gradientHeader: linear-gradient(180deg, #f9dafe 0%, #dd9de8 100%);
 
 $gradientLight: linear-gradient(180deg, #fbfafb 11.16%, #f7eef9 100%);
@@ -20,13 +20,25 @@ $gradientPinkTwo: linear-gradient(141.57deg, #ecbbf4 5.32%, #ca63dd 86.14%);
 
 $PrimaryBtnGradient: linear-gradient(360deg, #522e9f 0%, #8962d9 100%);
 
+// Primary outline-style
+$Dark: #5348a7;
+$Regular: #7767ed;
+$Light: #9b90ef;
+$Black: #3c3378;
+$White: #f3f0f7;
+
+$MainGradient: linear-gradient(180deg, #9b90ef 5.32%, #c1baf7 100%);
+$MainGradientReverse: linear-gradient(360deg, #9b90ef 5.32%, #c1baf7 100%);
+
+$PrimaryBtnGradient: linear-gradient(360deg, #5348a7 0%, #7767ed 100%);
+
 html,
 body {
   overflow-x: hidden;
   margin: 0;
   color: $White;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #ede7f6 0%, #d1c4e9 100%);
+  background: $bgColor;
 }
 
 a {

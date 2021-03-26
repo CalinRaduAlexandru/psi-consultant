@@ -106,10 +106,18 @@
 
   .faqs {
     position: static;
+    margin-left: -35px;
     margin-bottom: 170px;
+    width: 120%;
   }
   .faqText {
     height: auto;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .faqs {
+    width: 110%;
   }
 }

@@ -84,7 +84,10 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-ți relațiile"
                 />{" "}
-                <div className="pageSlide" style={{ marginTop: "7px" }}>
+                <div
+                  className="pageSlide pageSlideBottom"
+                  style={{ marginTop: "7px" }}
+                >
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
                     onClick={() => setCopii(false)}
@@ -162,7 +165,10 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   t4="Elemente de artterapie (desen, modelaj, colaj etc)."
                   text="Fortifică-i relațiile"
                 />{" "}
-                <div className="pageSlide" style={{ marginTop: "7px" }}>
+                <div
+                  className="pageSlide pageSlideBottom"
+                  style={{ marginTop: "7px" }}
+                >
                   <p>&#8810;</p>
                   <h1 id="bottomLeftSwitchBar"> Copii </h1>
                   <span style={{ position: "absolute", left: "50%" }}>|</span>

@@ -1,18 +1,32 @@
+import react, { useState } from "react";
+import Dropdown from "./Dropdown";
+import Link from "next/link";
+
 const Header = ({ title }) => {
+  const [dropdown, setDropdown] = useState(false);
+  const toggleMenu = () => {
+    setDropdown(!dropdown);
+    console.log(dropdown);
+  };
   return (
     <header className="header">
       <div className="left-header">
-        <div className="logo">
-          <img src="/logoTest.svg" alt="logo" width="75px" height="auto" />
-          <div className="shape">
-            <img
-              src="/LogoTestShape.svg"
-              alt="logo"
-              width="22px"
-              height="auto"
-            />
-          </div>
-        </div>
+        <Link href="/">
+          <a>
+            <div className="logo">
+              <img src="/logoTest.svg" alt="logo" width="75px" height="auto" />
+              <div className="shape">
+                <img
+                  src="/LogoTestShape.svg"
+                  alt="logo"
+                  width="22px"
+                  height="auto"
+                />
+              </div>
+            </div>
+          </a>
+        </Link>
+
         <h3 id="cabinetHeader">
           Cabinet individual
           <br /> Psiholog Elena Chivu
@@ -27,7 +41,11 @@ const Header = ({ title }) => {
       <h3 className="headerContact">
         Bucuresti <br /> Mobil: 0722 834 334 <br /> Email: elena@psi-consult.ro
       </h3>
-      <div className="headerMenu"> &#9776;</div>
+      <div className="headerMenu" onClick={toggleMenu}>
+        {" "}
+        &#9776;
+      </div>
+      {dropdown && <Dropdown toggleMenu={toggleMenu} />}
     </header>
   );
 };
