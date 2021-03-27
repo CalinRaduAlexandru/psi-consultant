@@ -115,11 +115,13 @@ const Home = ({ name, text }) => {
             <img
               src="/line.svg"
               alt="fir intortocheat devine deznodat de la psiholog la client"
-              width="270px"
+              width="250px"
               height="auto"
               style={{
                 transform: `translateY(${offsetY * -0.06}px)`,
-                marginLeft: "35px",
+                marginLeft: "50px",
+                marginTop: "-50px",
+                marginBottom: "20px",
               }}
             />
           </div>

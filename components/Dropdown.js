@@ -43,13 +43,24 @@ const Dropdown = ({ toggleMenu }) => {
           </Link>
         </li>
       </ul>
-      <img
-        src="/Meditation.svg"
-        alt="Meditation Woman"
-        width="260px"
-        height="auto"
-        style={{ marginTop: "-20px", marginBottom: "40px" }}
-      />
+      <div className="meditationDesktop">
+        <img
+          src="/Meditation.svg"
+          alt="Meditation Woman"
+          width="260px"
+          height="auto"
+          style={{ marginTop: "-20px", marginBottom: "40px" }}
+        />
+      </div>
+      <div className="mediationMobile">
+        <img
+          src="/Meditation.svg"
+          alt="Meditation Woman"
+          width="90px"
+          height="auto"
+          style={{ marginTop: "-20px", marginBottom: "40px" }}
+        />
+      </div>
     </div>
   );
 };

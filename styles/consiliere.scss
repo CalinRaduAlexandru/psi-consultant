@@ -30,13 +30,17 @@
     color: $Regular;
   }
   p {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 .consiliereSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  p {
+    max-width: 600px;
+  }
 }
 
 .consiliereIconMobile {
