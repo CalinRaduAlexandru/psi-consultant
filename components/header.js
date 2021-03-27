@@ -24,6 +24,9 @@ const Header = ({ title }) => {
                 />
               </div>
             </div>
+            <div id="MobileLogo">
+              <img src="/Logo.svg" alt="logo" width="35px" height="auto" />
+            </div>
           </a>
         </Link>
 
@@ -31,9 +34,6 @@ const Header = ({ title }) => {
           Cabinet individual
           <br /> Psiholog Elena Chivu
         </h3>
-        <div id="MobileLogo">
-          <img src="/Logo.svg" alt="logo" width="35px" height="auto" />
-        </div>
       </div>
       <div className="header-title">
         <h1>{title}</h1>
