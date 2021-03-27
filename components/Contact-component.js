@@ -18,6 +18,15 @@ export const ContactForm = () => {
     <div className="contact-section">
       <div data-aos="fade-right" className="form-content-right">
         <form className="form" onSubmit={addContact}>
+          <div id="sendMailContact">
+            <img
+              src="/sendMail.svg"
+              alt="Meditation Woman"
+              width="150px"
+              height="auto"
+              style={{ marginTop: "-20px", marginBottom: "40px" }}
+            />
+          </div>
           <h1 className="form-title">Intră în contact cu mine!</h1>
           <div className="form-inputs">
             <label htmlFor="name" className="form-label">

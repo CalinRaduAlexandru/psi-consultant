@@ -3,9 +3,9 @@ import Link from "next/link";
 const Dropdown = ({ toggleMenu }) => {
   return (
     <div className="dropdown">
-      <div className="dropdownX" onClick={toggleMenu}>
+      <p className="dropdownX" onClick={toggleMenu}>
         &#10006;
-      </div>
+      </p>
       <ul>
         <li>
           <Link href="/">

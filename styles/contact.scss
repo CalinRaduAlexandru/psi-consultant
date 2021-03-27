@@ -146,7 +146,7 @@
   justify-content: center;
   align-items: center;
   background: $MainGradient;
-  padding: 30px 50px 50px 50px;
+  padding: 50px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
   box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
@@ -290,9 +290,20 @@ textarea {
     .contactEmail {
       margin: 25px;
     }
+
+    .contactNumber {
+      margin-top: 0px;
+    }
   }
   .form-inputs {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+#sendMailContact {
+  margin: 20px 0 -20px 0;
+  @media (min-width: 1000px) {
+    display: none;
   }
 }
