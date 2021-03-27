@@ -31,7 +31,7 @@ export const Testimonials = [
   {
     id: 6,
     name: "lilian",
-    text: "Terapia cu tine mi-a redat sensul vietii !",
+    text: "Terapia cu tine mi-a redat sensul vietii!",
   },
   {
     id: 7,
