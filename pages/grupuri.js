@@ -49,7 +49,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <h3
                     onClick={() => setCopii(false)}
                     style={{
-                      color: "#c7b7e8",
+                      color: "#ded7f7",
                       cursor: "pointer",
                     }}
                   >
@@ -91,7 +91,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <p onClick={() => setCopii(false)}>&#8810;</p>
                   <h3
                     onClick={() => setCopii(false)}
-                    style={{ color: "#c7b7e8", cursor: "pointer" }}
+                    style={{ color: "#ded7f7", cursor: "pointer" }}
                   >
                     Copii
                   </h3>
@@ -126,7 +126,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <h3
                     onClick={() => setCopii(true)}
                     style={{
-                      color: "#c7b7e8",
+                      color: "#ded7f7",
                       cursor: "pointer",
                     }}
                   >
@@ -174,7 +174,7 @@ const Servicii = ({ title, src, subTitle, alt, text }) => {
                   <span style={{ position: "absolute", left: "50%" }}>|</span>
                   <h3
                     onClick={() => setCopii(true)}
-                    style={{ color: "#c7b7e8", cursor: "pointer" }}
+                    style={{ color: "#ded7f7", cursor: "pointer" }}
                   >
                     Adulți
                   </h3>

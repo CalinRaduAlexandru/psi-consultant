@@ -26,7 +26,12 @@ const Header = ({ title }) => {
               </div>
             </div>
             <div className="MobileLogo">
-              <img src="/Logo.svg" alt="logo" width="35px" height="auto" />
+              <img
+                src="/LogoMobile.svg"
+                alt="Mini Logo"
+                width="35px"
+                height="auto"
+              />
             </div>
           </a>
         </Link>
