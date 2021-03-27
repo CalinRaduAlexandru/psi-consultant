@@ -3,9 +3,15 @@ import Link from "next/link";
 const Dropdown = ({ toggleMenu }) => {
   return (
     <div className="dropdown">
-      <p className="dropdownX" onClick={toggleMenu}>
-        &#10006;
-      </p>
+      <div className="dropdownX" onClick={toggleMenu}>
+        <img
+          src="/ExitDropdown.svg"
+          alt="Meditation Woman"
+          width="30px"
+          height="auto"
+          style={{ marginTop: "-20px", marginBottom: "40px" }}
+        />
+      </div>
       <ul>
         <li>
           <Link href="/">
