@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $MainGradient;
+    background: linear-gradient(180deg, #9b90ef 5.32%, #c1baf7 100%);
     width: 320px;
     border-radius: 15px;
     padding: 45px 0;
@@ -145,7 +145,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: $MainGradient;
+  background: linear-gradient(180deg, #9b90ef 5.32%, #c1baf7 100%);
   padding: 50px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);
