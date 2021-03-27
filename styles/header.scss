@@ -74,9 +74,8 @@
     display: flex;
     align-items: center;
 
-    #MobileLogo {
+    .MobileLogo {
       display: static;
-      margin-right: 30px;
     }
 
     @media (max-width: 1000px) {
@@ -86,7 +85,7 @@
     }
 
     @media (min-width: 650px) {
-      #MobileLogo {
+      .MobileLogo {
         display: none;
       }
     }

@@ -133,7 +133,7 @@
   cursor: default;
 
   @media (max-width: 460px) {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -249,7 +249,8 @@ textarea {
     z-index: 100;
 
     .form {
-      width: 80vw;
+      width: 90vw;
+      max-width: 600px;
     }
   }
   .contactBottomInfo {
@@ -262,5 +263,9 @@ textarea {
     .contactEmail {
       margin: 25px;
     }
+  }
+  .form-inputs {
+    width: 100%;
+    max-width: 370px;
   }
 }

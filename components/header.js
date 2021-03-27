@@ -15,9 +15,7 @@ const Header = ({ title }) => {
           <a>
             <div className="logo">
               <img src="/logoTest.svg" alt="logo" width="75px" height="auto" />
-              <div id="MobileLogo">
-                <img src="/Logo.svg" alt="logo" width="35px" height="auto" />
-              </div>
+
               <div className="shape">
                 <img
                   src="/LogoTestShape.svg"
@@ -26,6 +24,9 @@ const Header = ({ title }) => {
                   height="auto"
                 />
               </div>
+            </div>
+            <div className="MobileLogo">
+              <img src="/Logo.svg" alt="logo" width="35px" height="auto" />
             </div>
           </a>
         </Link>
