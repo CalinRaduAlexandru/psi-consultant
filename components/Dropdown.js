@@ -4,7 +4,7 @@ const Dropdown = ({ toggleMenu }) => {
   return (
     <div className="dropdown">
       <div className="dropdownX" onClick={toggleMenu}>
-        &#10007;
+        &#10006;
       </div>
       <ul>
         <li>
@@ -43,6 +43,13 @@ const Dropdown = ({ toggleMenu }) => {
           </Link>
         </li>
       </ul>
+      <img
+        src="/Meditation.svg"
+        alt="Meditation Woman"
+        width="260px"
+        height="auto"
+        style={{ marginTop: "-20px", marginBottom: "40px" }}
+      />
     </div>
   );
 };

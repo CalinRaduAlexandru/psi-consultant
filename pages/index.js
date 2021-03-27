@@ -37,7 +37,7 @@ const Home = ({ name, text }) => {
         />
       </Head>
       <div className="container">
-        <Header title="Consultanță de psihoterapie" />
+        <Header title="Consult psihoterapeutic" />
         <main className="main">
           <MenuBar />
           <div className="mobileContainer">
@@ -90,24 +90,46 @@ const Home = ({ name, text }) => {
             marginRight: "10px",
           }}
         />
-        <div className="line-wrap">
+        <div className="acasaCaracters">
+          <div className="line-wrap">
+            <img
+              src="/line.svg"
+              alt="fir intortocheat devine deznodat de la psiholog la client"
+              width="370px"
+              height="auto"
+              style={{
+                transform: `translateY(${offsetY * -0.06}px)`,
+                marginLeft: "70px",
+              }}
+            />
+          </div>
           <img
-            src="/line.svg"
-            alt="fir intortocheat devine deznodat de la psiholog la client"
-            width="370px"
+            src="/PsiCharacters.svg"
+            alt="therapy"
+            width="500px"
             height="auto"
-            style={{
-              transform: `translateY(${offsetY * -0.06}px)`,
-              marginLeft: "5px",
-            }}
           />
         </div>
-        <img
-          src="/PsiCharacters.svg"
-          alt="therapy"
-          width="500px"
-          height="auto"
-        />
+        <div className="acasaCaractersMobile">
+          <div className="line-wrap Mobile">
+            <img
+              src="/line.svg"
+              alt="fir intortocheat devine deznodat de la psiholog la client"
+              width="270px"
+              height="auto"
+              style={{
+                transform: `translateY(${offsetY * -0.06}px)`,
+                marginLeft: "35px",
+              }}
+            />
+          </div>
+          <img
+            src="/PsiCharacters.svg"
+            alt="therapy"
+            width="340px"
+            height="auto"
+          />
+        </div>
         <section className="section-testimony">
           <Carousel breakPoints={breakPoints}>
             {Testimonials.map((testimony) => (
