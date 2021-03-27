@@ -26,9 +26,9 @@
 
   .headerMenu {
     display: block;
-    font-size: 35px;
-    cursor: pointer;
-    color: $White;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
     @media (min-width: 1300px) {
       display: none;
@@ -77,6 +77,9 @@
 
     .MobileLogo {
       display: static;
+      display: flex;
+      align-content: center;
+      justify-content: center;
     }
 
     @media (max-width: 1000px) {

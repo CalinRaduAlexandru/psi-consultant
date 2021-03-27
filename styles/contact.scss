@@ -29,7 +29,7 @@
 
   .roomLines {
     position: absolute;
-    bottom: 44%;
+    bottom: 42.5%;
     right: 14%;
     z-index: 2;
   }
@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #9b90ef 5.32%, #c1baf7 100%);
+    background: linear-gradient(360deg, #9b90ef 5.32%, #c1baf7 100%);
     width: 320px;
     border-radius: 15px;
     padding: 45px 0;
@@ -145,7 +145,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #9b90ef 5.32%, #c1baf7 100%);
+  background: linear-gradient(360deg, #9b90ef 5.32%, #c1baf7 100%);
   padding: 50px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 19px -1px rgba(49, 6, 57, 0.4);

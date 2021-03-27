@@ -48,7 +48,7 @@ const Header = ({ title }) => {
         Bucuresti <br /> Mobil: 0722 834 334 <br /> Email: elena@psi-consult.ro
       </h3>
       <div className="headerMenu" onClick={toggleMenu}>
-        <img src="/menuIcon.svg" alt="logo" width="30px" height="auto" />
+        <img src="/menuIcon.svg" alt="logo" width="40px" height="auto" />
       </div>
       {dropdown && <Dropdown toggleMenu={toggleMenu} />}
     </header>
