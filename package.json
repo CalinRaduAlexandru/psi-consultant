@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "export": "next build && next export"
+    "export": "next build && next export",
     "build": "next run export",
-    "start": "next start",
+    "start": "next start"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
