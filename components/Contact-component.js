@@ -1,23 +1,42 @@
+import React, { useState, useEffect } from "react";
+import { db } from "./../Firebase.js";
+
 export const ContactForm = () => {
-  const formState = { name: "", email: "", message: "" };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  function updateFormState(key, value) {
-    formState[key] = value;
-  }
+  const [loader, setLoader] = useState(false);
 
-  async function addContact() {
-    const data = {
-      body: {
-        name: formState.name,
-        email: formState.email,
-        message: formState.message,
-      },
-    };
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+        date: new Date(),
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div className="contact-section">
       <div data-aos="fade-right" className="form-content-right">
-        <form className="form" onSubmit={addContact}>
+        <form className="form" onSubmit={handleSubmit}>
           <div id="sendMailContact">
             <img
               src="/sendMail.svg"
@@ -36,8 +55,9 @@ export const ContactForm = () => {
               id="name"
               type="text"
               name="name"
+              value={name}
               className="form-input"
-              onChange={(e) => updateFormState("name", e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="form-inputs">
@@ -48,8 +68,9 @@ export const ContactForm = () => {
               id="email"
               type="email"
               name="email"
+              value={email}
               className="form-input"
-              onChange={(e) => updateFormState("email", e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-inputs message">
@@ -60,11 +81,16 @@ export const ContactForm = () => {
               id="text"
               type="text"
               name="message"
+              value={message}
               className="form-input-message"
-              onChange={(e) => updateFormState("message", e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          <button className="form-input-btn" type="submit" onClick={addContact}>
+          <button
+            style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
+            className="form-input-btn"
+            type="submit"
+          >
             Trimite
           </button>
         </form>
