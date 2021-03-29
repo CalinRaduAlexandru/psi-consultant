@@ -6,7 +6,6 @@ const Header = ({ title }) => {
   const [dropdown, setDropdown] = useState(false);
   const toggleMenu = () => {
     setDropdown(!dropdown);
-    console.log(dropdown);
   };
   return (
     <header className="header">
